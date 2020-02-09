@@ -4,7 +4,7 @@
 
 # JavaScript
 
-- [闭包]('./Javascript/closure.md')
+- [闭包](./Javascript/closure.md)
 
 # ES 6
 
