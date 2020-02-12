@@ -4,7 +4,8 @@
 
 # JavaScript
 
-- [闭包](./Javascript/closure.md)
-
 # ES 6
 
+# 网络
+
+- [HTTP](./netword/xhr.md)
