@@ -8,4 +8,4 @@
 
 # 网络
 
-- [HTTP](./netword/xhr.md)
+- [HTTP](./network/xhr.md)
