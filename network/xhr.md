@@ -56,7 +56,7 @@ type XMLHttpRequestResponseType = "" | "arraybuffer" | "blob" | "document" | "js
 
 返回一个 [`DOMString`](https://developer.mozilla.org/zh-CN/docs/Web/API/DOMString)，该 [`DOMString`](https://developer.mozilla.org/zh-CN/docs/Web/API/DOMString) 包含对请求的响应，如果请求未成功或尚未发送，则返回 `null`。
 
-**当且仅当 `XMLHttpRequest.responseType` 为 'text' 或 '' 才可访问 **   
+**当且仅当 `XMLHttpRequest.responseType` 为 'text' 或 '' 才可访问**   
 
 <br>
 
