@@ -46,11 +46,17 @@ type XMLHttpRequestResponseType = "" | "arraybuffer" | "blob" | "document" | "js
 
   
 
+------
+
+
+
 [`XMLHttpRequest.response`](https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest/response) 只读
 
 返回一个 [`ArrayBuffer`](https://developer.mozilla.org/zh-CN/docs/Web/API/ArrayBuffer)、[`Blob`](https://developer.mozilla.org/zh-CN/docs/Web/API/Blob)、[`Document`](https://developer.mozilla.org/zh-CN/docs/Web/API/Document)，或 [`DOMString`](https://developer.mozilla.org/zh-CN/docs/Web/API/DOMString)，具体是哪种类型取决于 [`XMLHttpRequest.responseType`](https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest/responseType) 的值。其中包含整个响应体（response body）。  
 
 
+
+------
 
 
 
@@ -58,9 +64,11 @@ type XMLHttpRequestResponseType = "" | "arraybuffer" | "blob" | "document" | "js
 
 返回一个 [`DOMString`](https://developer.mozilla.org/zh-CN/docs/Web/API/DOMString)，该 [`DOMString`](https://developer.mozilla.org/zh-CN/docs/Web/API/DOMString) 包含对请求的响应，如果请求未成功或尚未发送，则返回 `null`。
 
-**当且仅当 `XMLHttpRequest.responseType` 为 'text' 或 '' 才可访问     **  
+**当且仅当 `XMLHttpRequest.responseType` 为 'text' 或 '' 才可访问 **  
 
 
+
+------
 
 
 
@@ -69,6 +77,8 @@ type XMLHttpRequestResponseType = "" | "arraybuffer" | "blob" | "document" | "js
 返回一个无符号短整型（unsigned short）数字，代表请求的响应状态。  
 
 
+
+------
 
 
 
