@@ -8,4 +8,6 @@
 
 # 网络
 
-- [HTTP](./network/xhr.md)
+- [阮一峰：关于 URL 编码](http://www.ruanyifeng.com/blog/2010/02/url_encoding.html)
+
+- [XHR 对象](./network/xhr.md)
