@@ -200,4 +200,29 @@ module.exports = function xhrAdapter(config) {
   });
 };
 ```
-adapter 就是分装好的 xhr 对象
+adapter 就是封装好的 xhr 对象
+
+## 方法别名
+```js
+utils.forEach(['delete', 'get', 'head', 'options'], function forEachMethodNoData(method) {
+  /*eslint func-names:0*/
+  Axios.prototype[method] = function(url, config) {
+    return this.request(utils.merge(config || {}, {
+      method: method,
+      url: url
+    }));
+  };
+});
+
+utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
+  /*eslint func-names:0*/
+  Axios.prototype[method] = function(url, data, config) {
+    return this.request(utils.merge(config || {}, {
+      method: method,
+      url: url,
+      data: data
+    }));
+  };
+});
+```
+方法别名都是 request 的语法糖
