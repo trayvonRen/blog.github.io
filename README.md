@@ -13,4 +13,4 @@
 - [XHR 对象](./network/xhr.md)
 - axios
     - [axios, ajax和fetch的比较](http://www.axios-js.com/zh-cn/blogs/)
-    - [axios 的功能](./network/axios.md)
+    - [axios 的功能](./network/axios/axios.md)
