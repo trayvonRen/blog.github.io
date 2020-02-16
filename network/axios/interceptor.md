@@ -1,6 +1,6 @@
 ## 拦截器
-请求拦截器在请求之前执行，用于对 config 的处理
-相应拦截器在收到相应之后执行，用于对 response 的处理
+请求拦截器在请求之前执行，用于对 config 的处理  
+响应拦截器在收到响应之后执行，用于对 response 的处理
 
 ### InterceptorManager
 ```js
