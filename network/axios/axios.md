@@ -267,3 +267,13 @@ axios.get('/user/12345', {
 cancel();
 ```
 **[关于取消请求的源码分析](./cancel.md)**
+
+## CSRF 防御
+```js
+ // `xsrfCookieName` 是用作 xsrf token 的值的cookie的名称
+  xsrfCookieName: 'XSRF-TOKEN', // default
+
+  // `xsrfHeaderName` is the name of the http header that carries the xsrf token value
+  xsrfHeaderName: 'X-XSRF-TOKEN', // default
+```
+**[关于CSRF 防御的源码分析](./csrf.md)**
