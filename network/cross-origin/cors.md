@@ -37,6 +37,9 @@ CORS请求失败会产生错误，但是为了安全，在JavaScript代码层面
 - 请求中的任意XMLHttpRequestUpload 对象均没有注册任何事件监听器；XMLHttpRequestUpload 对象可以使用 XMLHttpRequest.upload 属性访问。
 - 请求中没有使用 ReadableStream 对象。
 
+响应头需要有  
+`Access-Control-Allow-Origin: http://origin.xx`
+
 ### 预检请求
 与前述简单请求不同，“需预检的请求”要求必须首先使用 OPTIONS   方法发起一个预检请求到服务器，以获知服务器是否允许该实际请求。"预检请求“的使用，可以避免跨域请求对服务器的用户数据产生未预期的影响。
 
@@ -66,6 +69,13 @@ CORS请求失败会产生错误，但是为了安全，在JavaScript代码层面
 - 请求中的XMLHttpRequestUpload 对象注册了任意多个事件监听器。
 - 请求中使用了ReadableStream对象。
 
+预检请求头:  
+`Access-Control-Request-Method: POST`
+`Access-Control-Request-Headers: X-PINGOTHER Content-Type`  
+预检响应头:  
+`Access-Control-Request-Method: POST`  
+`Access-Control-Request-Headers: X-PINGOTHER, Content-Type`
+
 ## 附带身份凭证的请求
 
 Fetch 与 CORS 的一个有趣的特性是，可以基于  HTTP cookies 和 HTTP 认证信息发送身份凭证。一般而言，对于跨域 XMLHttpRequest 或 Fetch 请求，浏览器不会发送身份凭证信息。如果要发送凭证信息，需要设置 XMLHttpRequest 的某个特殊标志位。
@@ -74,4 +84,7 @@ Fetch 与 CORS 的一个有趣的特性是，可以基于  HTTP cookies 和 HTTP
 xhr.withCredentials = true
 ```
 修改了这个属性，请求就会携带 cookie
-并且响应头必须要有 `Access-Control-Allow-Credentials: true` 
+并且响应头必须要有   
+  `Access-Control-Allow-Credentials: true`   
+对于附带身份凭证的请求，服务器不得设置  
+ `Access-Control-Allow-Origin` 的值为“*”。
