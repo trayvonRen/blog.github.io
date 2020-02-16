@@ -213,3 +213,57 @@ const myInterceptor = axios.interceptors.request.use(function () {/*...*/});
 axios.interceptors.request.eject(myInterceptor);
 ```
 **[关于拦截器的源码分析](./interceptor.md)**
+
+## 创建实例
+可以使用自定义配置新建一个 axios 实例
+```js
+const instance = axios.create({
+  baseURL: 'https://some-domain.com/api/',
+  timeout: 1000,
+  headers: {'X-Custom-Header': 'foobar'}
+});
+```
+**[关于创建实例的源码分析](./instance.md)**
+
+
+## 取消请求
+使用 cancel token 取消请求
+```js
+const CancelToken = axios.CancelToken;
+const source = CancelToken.source();
+
+axios.get('/user/12345', {
+  cancelToken: source.token
+}).catch(function(thrown) {
+  if (axios.isCancel(thrown)) {
+    console.log('Request canceled', thrown.message);
+  } else {
+     // 处理错误
+  }
+});
+
+axios.post('/user/12345', {
+  name: 'new name'
+}, {
+  cancelToken: source.token
+})
+
+// 取消请求（message 参数是可选的）
+source.cancel('Operation canceled by the user.');
+```
+还可以通过传递一个 executor 函数到 CancelToken 的构造函数来创建 cancel token：
+```js
+const CancelToken = axios.CancelToken;
+let cancel;
+
+axios.get('/user/12345', {
+  cancelToken: new CancelToken(function executor(c) {
+    // executor 函数接收一个 cancel 函数作为参数
+    cancel = c;
+  })
+});
+
+// cancel the request
+cancel();
+```
+**[关于取消请求的源码分析](./cancel.md)**
