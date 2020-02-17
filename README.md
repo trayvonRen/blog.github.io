@@ -1,7 +1,7 @@
 # HTML
 
 # CSS
-
+- [resect-css](./css/resect-css.md)
 # JavaScript
 - [错误处理](./javascript/handleError.md)
 # ES 6
