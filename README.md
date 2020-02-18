@@ -2,8 +2,9 @@
 - [HTML 元素分类](./html/display.md)
 - [HTML 嵌套关系](./html/nest.md)
 # CSS
-- [resect-css](./css/resect-css.md)
 - [css 选择器](./css/select.md)
+- [css 字体](./css/font-family.md)
+- [resect-css](./css/resect-css.md)
 # JavaScript
 - [错误处理](./javascript/handleError.md)
 # ES 6
