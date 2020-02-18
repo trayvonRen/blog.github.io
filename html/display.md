@@ -6,7 +6,6 @@
 ```html
 <div>、<p>、<h1>...<h6>、<ol>、<ul>、<dl>、<table>、<address>、<blockquote> 、<form>
 ```
-- display: block
 - 独占一行
 - 元素宽度在不设置的情况下，是它本身父容器的100%（width 默认100%）。
 - 块状元素都可以定义自己的宽度和高度。
@@ -15,7 +14,6 @@
 ```html
 <span>、<a>、<label>、<input>、<strong>、<em>
 ```
-- display: inline
 - 内联元素没有自己的形状，不能定义它的宽和高,它显示的宽度、高度只能根据所包含内容的高度和宽度来确定，它的最小内容单元也会呈现矩形形状；
 - 内联元素也会遵循盒模型基本规则，如可以定义padding,border,margin,background等属性，但个别属性不能正确显示;
 - 和其他元素都在一行上
@@ -24,6 +22,5 @@
 ```html
 <img> , <input>
 ```
-- display:inline-block
 - 和其他元素都在一行上
 - 元素的高度、宽度、行高及顶和底边距都可设置。

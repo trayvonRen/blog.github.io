@@ -132,3 +132,41 @@ p + p {
     font-size: 300px;
 }
 ```
+
+## CSS 2.1中的伪元素
+### E:first-line
+匹配E元素的第一行
+```css
+p:first-line { 
+    font-weight:bold; color;#600; 
+}
+```
+
+### E:first-letter
+匹配E元素的第一个字母
+```css
+.preamble:first-letter { 
+    font-size:1.5em; 
+    font-weight:bold; 
+}
+```
+
+### E:before	
+在E元素之前插入生成的内容
+```css
+.cbb:before { 
+    content:""; 
+    display:block; 
+    height:17px; 
+    width:18px; 
+    background:url(top.png) no-repeat 0 0; margin:0 0 0 -18px; 
+}
+```
+
+### E:after
+在E元素之后插入生成的内容
+```css
+a:link:after { 
+    content: " (" attr(href) ") "; 
+}
+```
