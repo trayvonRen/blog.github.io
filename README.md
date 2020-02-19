@@ -30,3 +30,8 @@
 - [create-react-app](./react/create-react-app.md)
 - [react 中的 css 解决方案](./react/css/css.md)  
     -[styled-components](./react/css/styled.md)
+
+# operations
+- [ssh](https://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html)
+- [从零开始搭建自己的 web 服务器](./operations/web.md)  
+    - [一、ssh 登录服务器](./operations/web1.md)
