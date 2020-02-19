@@ -40,7 +40,7 @@ export default Test;
 ```
 这种方式引入的css样式，会作用于当前组件及其所有后代组件。
 
-## styled-components
+## css in js
 [styled-components](./styled.md)
 
 ## css-module
