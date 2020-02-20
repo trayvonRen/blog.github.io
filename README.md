@@ -29,9 +29,13 @@
 # react
 - [create-react-app](./react/create-react-app.md)
 - [react 中的 css 解决方案](./react/css/css.md)  
-    -[styled-components](./react/css/styled.md)
+    - [styled-components](./react/css/styled.md)
 
 # operations
 - [ssh](https://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html)
+- [ftp 主动模式和被动模式](https://juejin.im/entry/5a77f6f06fb9a0636323f2a2)
+- [yum](https://wangchujiang.com/linux-command/c/yum.html)
+- [centos 常用命令](./operations/commond.md)
 - [从零开始搭建自己的 web 服务器](./operations/web.md)  
     - [一、ssh 登录服务器](./operations/web1.md)
+    - [一、安装并配置ftp 服务器](./operations/web2.md)
