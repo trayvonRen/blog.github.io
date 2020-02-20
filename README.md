@@ -38,4 +38,5 @@
 - [centos 常用命令](./operations/commond.md)
 - [从零开始搭建自己的 web 服务器](./operations/web.md)  
     - [一、ssh 登录服务器](./operations/web1.md)
-    - [一、安装并配置ftp 服务器](./operations/web2.md)
+    - [二、安装并配置 ftp 服务器](./operations/web2.md)
+    - [三、安装并配置 nginx 服务器](./operations/web3.md)
