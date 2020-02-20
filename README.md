@@ -2,6 +2,7 @@
 - [HTML 元素分类](./html/display.md)
 - [HTML 嵌套关系](./html/nest.md)
 # CSS
+- [长度单位](https://woyasuohen6.cn/2019/11/09/css/length/)  
 - [css 选择器](./css/select.md)
 - [css 字体](./css/font-family.md)
 - [盒模型](./css/box.md)
@@ -9,8 +10,16 @@
 - [css 包含块](https://developer.mozilla.org/zh-CN/docs/Web/CSS/All_About_The_Containing_Block)
 - [width/height](./css/width.md)
 - [css 文档流](https://leohxj.gitbooks.io/front-end-database/html-and-css-basic/css-normal-flow.html)
+- 移动端适配  
+    -  [viewport](https://woyasuohen6.cn/2019/11/09/css/viewport/)  
+    - [移动端适配 几种方案](https://woyasuohen6.cn/2019/11/09/css/mobileAdaptation/)
 - [resect-css](./css/resect-css.md)
 # JavaScript
+- [数据类型](https://woyasuohen6.cn/2020/01/28/javascript/data_structures/)
+- [理解JavaScript对象](https://woyasuohen6.cn/2020/01/30/javascript/object/)
+- [类型检测](https://woyasuohen6.cn/2020/01/28/javascript/data_type/)
+- [词法作用域](https://woyasuohen6.cn/2020/01/20/javascript/scope/)
+- [this](https://woyasuohen6.cn/2020/01/20/javascript/this/)
 - [错误处理](./javascript/handleError.md)
 # ES 6
 - [Promise](./es6/promise.md)
@@ -31,6 +40,11 @@
 - [react 中的 css 解决方案](./react/css/css.md)  
     - [styled-components](./react/css/styled.md)
 
+# vue
+- [Runtime Compiler vs Runtime-only](https://woyasuohen6.cn/2019/11/07/vue/runtimeOnly/)  
+- [rend 函数](https://woyasuohen6.cn/2019/11/07/vue/vue-render/)
+- [nextTick](https://woyasuohen6.cn/2020/02/02/vue-code/next-tick/)
+- [vue 管理 axios 接口](https://woyasuohen6.cn/2019/12/10/vue/axios_api/) 
 # operations
 - [ssh](https://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html)
 - [ftp 主动模式和被动模式](https://juejin.im/entry/5a77f6f06fb9a0636323f2a2)
@@ -40,3 +54,6 @@
     - [一、ssh 登录服务器](./operations/web1.md)
     - [二、安装并配置 ftp 服务器](./operations/web2.md)
     - [三、安装并配置 nginx 服务器](./operations/web3.md)
+
+# git
+- [commit 规范](https://woyasuohen6.cn/2019/11/09/git/commitGuide/)
