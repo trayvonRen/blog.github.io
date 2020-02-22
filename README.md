@@ -22,7 +22,9 @@
 - [this](https://woyasuohen6.cn/2020/01/20/javascript/this/)
 - [错误处理](./javascript/handleError.md)  
 # typescript
+- [数据类型](./typescript/type.md)
 - [接口](./typescript/interface.md)
+
 # ES 6
 - [Promise](./es6/promise.md)
 # network
