@@ -22,7 +22,7 @@
 - [this](https://woyasuohen6.cn/2020/01/20/javascript/this/)
 - [错误处理](./javascript/handleError.md)  
 # typescript
-- [数据类型](./typescript/type.md)
+- [基础类型](https://www.tslang.cn/docs/handbook/basic-types.html)
 - [接口](./typescript/interface.md)
 
 # ES 6
