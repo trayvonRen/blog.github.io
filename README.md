@@ -18,6 +18,7 @@
 - [数据类型](https://woyasuohen6.cn/2020/01/28/javascript/data_structures/)  
 - [javascript 数据结构](https://woyasuohen6.cn/2020/02/28/javascript/dataS/)
 - [javaScript 遍历各种数据类型](https://woyasuohen6.cn/2020/02/28/javascript/Iteration/)
+- [位移，异或运算符](./javascript/operator.md)  
 - [理解JavaScript对象](https://woyasuohen6.cn/2020/01/30/javascript/object/)
 - [类型检测](https://woyasuohen6.cn/2020/01/28/javascript/data_type/)
 - [词法作用域](https://woyasuohen6.cn/2020/01/20/javascript/scope/)
