@@ -1,0 +1,20 @@
+{
+  "name": "algorithm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "author": "Your name <'1669506811@qq.com'>",
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^1.3.1",
+    "vuepress-plugin-mathjax": "^1.2.8"
+  },
+  "dependencies": {
+    "markdown-it-katex": "^2.0.3"
+  }
+}
