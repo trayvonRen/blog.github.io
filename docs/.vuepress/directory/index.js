@@ -7,6 +7,9 @@ let operator = require('./operator');
 let node = require('./node');
 let html = require('./html');
 let css = require('./css');
+let vue = require('./vue');
+let git = require('./git');
+
 module.exports = {
    '/react': react,
    '/algorithm/': algorithm,
@@ -16,5 +19,7 @@ module.exports = {
    '/operator': operator,
    '/node': node,
    '/html': html,
-   '/css': css
+   '/css': css,
+   '/vue': vue,
+   '/git': git
 }

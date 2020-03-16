@@ -5,6 +5,8 @@ module.exports = [{
    sidebarDepth: 2, // 可选的, 默认值是 1
    children: [
       ['/react/base/create-react-app.md', 'create react app'],
+      ['/react/base/react.md', 'react 入门'],
+      ['/react/base/JSX.md', '深入 JSX'],
    ]
 }, {
    title: 'react 中的 css', // 必要的

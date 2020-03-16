@@ -6,6 +6,21 @@ module.exports = [{
    children: [
       ['/javascript/base/handleError.md', '错误处理'],
       ['/javascript/base/operator.md', '按位运算符'],
+      ['/javascript/base/array_method.md', '数组方法'],
+      ['/javascript/base/scope.md', '词法作用域'],
+      ['/javascript/base/object.md', '深入理解 JavaScript 对象'],
+      ['/javascript/base/Iteration.md', 'JavaScript 遍历'],
+      ['/javascript/base/dataS.md', 'JavaScript 数据结构'],
+      ['/javascript/base/data_structures.md', 'JavaScript 数据类型'],
+      ['/javascript/base/data_type.md', 'JavaScript 类型检测'],
+   ]
+},{
+   title: 'js 进阶', // 必要的
+   path: '/javascript/improve/', // 可选的, 应该是一个绝对路径
+   collapsable: true, // 可选的, 默认值是 true,
+   sidebarDepth: 2, // 可选的, 默认值是 1
+   children: [
+      ['/javascript/improve/this.md', 'this'],
    ]
 }, {
    title: 'ES 6', // 必要的

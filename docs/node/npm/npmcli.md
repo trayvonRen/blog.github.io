@@ -1,11 +1,11 @@
-## init
+## init  
 初始化一个 package.json
 ## install
 安装依赖  
 在安装时，使用 -g 进行全局安装，否则安装在本地
 #### npm install  
 安装 package.json 所需的所有依赖 
-#### npm install [<@scope>/]<name>@<version>
+#### npm install @scope/name@version
 安装指定域中的依赖  
 可以设置以下参数  
 - -P, --save-prod (default)

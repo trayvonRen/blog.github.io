@@ -1,6 +1,5 @@
-## create-react-app
-create-react-app 是 react 官方提供的一款创建 react 应用的脚手架工具
 
+create-react-app 是 react 官方提供的一款创建 react 应用的脚手架工具
 ## 创建应用程序
 ### npx
 ```

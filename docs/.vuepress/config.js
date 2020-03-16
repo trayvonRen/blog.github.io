@@ -1,7 +1,7 @@
 let sidebar = require('./directory/index');
 
 module.exports = {
-  description: '博客',
+  description: 'rcw',
   head: [
     ['link', {
       rel: 'icon',
@@ -9,7 +9,7 @@ module.exports = {
     }]
   ],
   base: '/',
-  title: 'RCW',
+  title: '返回首页',
   locales: {
     // 键名是该语言所属的子路径
     // 作为特例，默认语言可以使用 '/' 作为其路径。
@@ -34,12 +34,20 @@ module.exports = {
         link: '/javascript/'
       },
       {
+        text: 'Vue',
+        link: '/vue/'
+      },
+      {
         text: 'React',
         link: '/react/'
       },
       {
         text: 'Node',
         link: '/node/'
+      },
+      {
+        text: 'Git',
+        link: '/git/'
       },
       {
         text: '计算机网络',
