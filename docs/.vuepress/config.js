@@ -22,6 +22,34 @@ module.exports = {
     // 顶部导航
     nav: [
       {
+        text: 'Html',
+        link: '/html/'
+      },
+      {
+        text: 'Css',
+        link: '/css/'
+      },
+      {
+        text: 'Javascript',
+        link: '/javascript/'
+      },
+      {
+        text: 'React',
+        link: '/react/'
+      },
+      {
+        text: 'Node',
+        link: '/node/'
+      },
+      {
+        text: '计算机网络',
+        link: '/network/'
+      },
+      {
+        text: '运维',
+        link: '/operator/'
+      },
+      {
         text: '算法',
         link: '/algorithm/'
       },{
