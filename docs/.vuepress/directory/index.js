@@ -9,6 +9,7 @@ let html = require('./html');
 let css = require('./css');
 let vue = require('./vue');
 let git = require('./git');
+let jquery = require('./jquery');
 
 module.exports = {
    '/react': react,
@@ -21,5 +22,6 @@ module.exports = {
    '/html': html,
    '/css': css,
    '/vue': vue,
-   '/git': git
+   '/git': git,
+   '/jquery': jquery
 }

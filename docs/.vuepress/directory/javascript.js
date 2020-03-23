@@ -8,6 +8,7 @@ module.exports = [{
       ['/javascript/base/operator.md', '按位运算符'],
       ['/javascript/base/array_method.md', '数组方法'],
       ['/javascript/base/scope.md', '词法作用域'],
+      ['/javascript/base/function.md', '深入理解 JavaScript 函数'],
       ['/javascript/base/object.md', '深入理解 JavaScript 对象'],
       ['/javascript/base/Iteration.md', 'JavaScript 遍历'],
       ['/javascript/base/dataS.md', 'JavaScript 数据结构'],
@@ -21,6 +22,7 @@ module.exports = [{
    sidebarDepth: 2, // 可选的, 默认值是 1
    children: [
       ['/javascript/improve/this.md', 'this'],
+      ['/javascript/improve/scope.md', '执行期上下文，作用域链，闭包'],
    ]
 }, {
    title: 'ES 6', // 必要的

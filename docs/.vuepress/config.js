@@ -34,6 +34,10 @@ module.exports = {
         link: '/javascript/'
       },
       {
+        text: 'Jquery',
+        link: '/jquery/'
+      },
+      {
         text: 'Vue',
         link: '/vue/'
       },

@@ -23,10 +23,11 @@ tags:
 ### NULL
 JavaScript 中的 null 仅仅是一个代表“无”、“空”或“值未知”的特殊值。
 相比较于其他编程语言，JavaScript 中的 null 不是一个“对不存在的 object 的引用”或者 “null 指针”。
-
-### Undefined 类型
-undefined 的含义是 未被赋值。
-一个没有被赋值的变量会有个默认值 undefined
+  
+### Undefined 类型  
+undefined 的含义是未被赋值。   
+一个没有被赋值的变量会有个默认值 undefined，没有传入的函数参数值也是 undefined。  
+在日常开发中，undefined 应该始终表示没有被赋值的变量或参数。  
 
 ### 数字类型（Number）
 JavaScript 中只有一种数字类型：基于 IEEE 754 标准的双精度 64 位二进制格式的值  **-($2^{53}$ -1) 到 ($2^{53}$ -1)**
@@ -74,6 +75,6 @@ Symbol("foo") === Symbol("foo"); // false
 ### JSON
 ### 键控集: Maps, Sets, WeakMaps, WeakSets
 ## 参考资料
-[MDN: JavaScript 数据类型和数据结构](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Data_structures)
-《JavaScript 高级程序设计》
-《你不知道的 JavaScript》
+[MDN: JavaScript 数据类型和数据结构](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Data_structures)  
+《JavaScript 高级程序设计》  
+《你不知道的 JavaScript》  

@@ -31,12 +31,32 @@ module.exports = [{
       ['/algorithm/search/binary.md', '二分查找'],
    ]
 }, {
+   title: '递归', // 必要的
+   path: '/algorithm/recursion/', // 可选的, 应该是一个绝对路径
+   collapsable: true, // 可选的, 默认值是 true,
+   sidebarDepth: 2, // 可选的, 默认值是 1
+   children: [
+      ['/algorithm/recursion/improve.md', '深入理解递归'],
+      ['/algorithm/recursion/memoization.md', '递归优化: memoization'],
+      ['/algorithm/recursion/train.md', '训练题'],
+      // ['/algorithm/recursion/binary.md', '二分查找'],
+   ]
+}, {
    title: '贪心算法', // 必要的
    path: '/algorithm/greedy/', // 可选的, 应该是一个绝对路径
    collapsable: true, // 可选的, 默认值是 true,
    sidebarDepth: 2, // 可选的, 默认值是 1
    children: [
       ['/algorithm/greedy/train.md', '训练题'],
+      // ['/algorithm/greedy/binary.md', '二分查找'],
+   ]
+},{
+   title: '动态规划', // 必要的
+   path: '/algorithm/dp/', // 可选的, 应该是一个绝对路径
+   collapsable: true, // 可选的, 默认值是 true,
+   sidebarDepth: 2, // 可选的, 默认值是 1
+   children: [
+      ['/algorithm/dp/train.md', '训练题'],
       // ['/algorithm/greedy/binary.md', '二分查找'],
    ]
 }, {
