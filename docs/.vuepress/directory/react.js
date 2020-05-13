@@ -1,12 +1,33 @@
 module.exports = [{
-   title: 'react 基础', // 必要的
+   title: 'react', // 必要的
    path: '/react/base/', // 可选的, 应该是一个绝对路径
    collapsable: true, // 可选的, 默认值是 true,
    sidebarDepth: 2, // 可选的, 默认值是 1
    children: [
       ['/react/base/create-react-app.md', 'create react app'],
-      ['/react/base/react.md', 'react 入门'],
+      ['/react/base/JSX_base.md', 'JSX'],
+      ['/react/base/element.md', '元素'],
+      ['/react/base/component.md', '组件'],
+      ['/react/base/Lifecycle.md', '生命周期'],
+      ['/react/base/data.md', 'Props & State'],
+      ['/react/base/proptypes.md', 'PropTypes'],
+      ['/react/base/ref.md', 'Refs'],
       ['/react/base/JSX.md', '深入 JSX'],
+   ]
+}, {
+   title: 'redux', // 必要的
+   path: '/react/redux/', // 可选的, 应该是一个绝对路径
+   collapsable: true, // 可选的, 默认值是 true,
+   sidebarDepth: 2, // 可选的, 默认值是 1
+   children: [
+      ['/react/redux/flow.md', '工作流程'],
+      ['/react/redux/action.md', 'Action'],
+      ['/react/redux/reducer.md', 'Reducer'],
+      ['/react/redux/store.md', 'Store'],
+      ['/react/redux/react-redux.md', 'react-redux'],
+      ['/react/redux/middleware.md', '中间件'],
+      ['/react/redux/redux-thunk.md', 'redux-thunk'],
+      ['/react/redux/redux-saga.md', 'redux-saga'],
    ]
 }, {
    title: 'react 中的 css', // 必要的

@@ -20,6 +20,7 @@ module.exports = [{
       ['/algorithm/sort/Selection.md', '选择排序'],
       ['/algorithm/sort/quick.md', '快速排序'],
       ['/algorithm/sort/insertion.md', '插入排序'],
+      ['/algorithm/sort/heapsort.md', '堆排序'],
    ]
 }, {
    title: '搜索算法', // 必要的
@@ -29,6 +30,9 @@ module.exports = [{
    children: [
       ['/algorithm/search/linear.md', '顺序查找'],
       ['/algorithm/search/binary.md', '二分查找'],
+      ['/algorithm/search/dfs.md', '深度优先搜索'],
+      ['/algorithm/search/bfs.md', '广度优先搜索'],
+
    ]
 }, {
    title: '递归', // 必要的
@@ -56,6 +60,7 @@ module.exports = [{
    collapsable: true, // 可选的, 默认值是 true,
    sidebarDepth: 2, // 可选的, 默认值是 1
    children: [
+      ['/algorithm/dp/method.md', '解题步骤'],
       ['/algorithm/dp/train.md', '训练题'],
       // ['/algorithm/greedy/binary.md', '二分查找'],
    ]
@@ -71,8 +76,15 @@ module.exports = [{
       ['/algorithm/lanqiao/2_3.md', 'BASIC-3：字母图形'],
       ['/algorithm/lanqiao/2_8.md', 'BASIC-8：回文数'],
       ['/algorithm/lanqiao/2_9.md', 'BASIC-9：特殊回文数'],
+      ['/algorithm/lanqiao/2_16.md', 'BASIC-16：分解质因数'],
       ['/algorithm/lanqiao/2_11.md', 'BASIC-10, 11, 12 ：进制转换'],
       ['/algorithm/lanqiao/2_19.md', 'BASIC-19 ：完美的代价'],
+      ['/algorithm/lanqiao/2_22.md', 'BASIC-22：FJ的字符串'],
+      ['/algorithm/lanqiao/2_23.md', 'BASIC-23：芯片测试'],
+      ['/algorithm/lanqiao/2_25.md', 'BASIC-25：回形取数'],
+      ['/algorithm/lanqiao/2_26.md', 'BASIC-26：报时助手'],
+      ['/algorithm/lanqiao/2_28.md', 'BASIC-28：Huffuman树'],
       ['/algorithm/lanqiao/2_30.md', 'BASIC-30：阶乘计算'],
+      ['/algorithm/lanqiao/3_1.md', 'ALGO-1：区间k大数查询'],
    ]
 }]

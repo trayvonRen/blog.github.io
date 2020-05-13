@@ -8,11 +8,11 @@
 #### npm install @scope/name@version
 安装指定域中的依赖  
 可以设置以下参数  
-- -P, --save-prod (default)
+- -P, --save-prod (default)  
 把依赖加入 dependencies 中  
-- -D, --save-dev  
+- -D, --save-dev    
 把依赖加入 devDependencies.
-- --no-save
+- --no-save  
 不加入 package.json
 
 ## uninstall

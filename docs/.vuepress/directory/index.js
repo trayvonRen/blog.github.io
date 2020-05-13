@@ -1,27 +1,12 @@
-let algorithm = require('./algorithm');
-let structure = require('./structure');
-let react = require('./react');
-let network = require('./network');
-let javascript = require('./javascript');
-let operator = require('./operator');
-let node = require('./node');
-let html = require('./html');
-let css = require('./css');
-let vue = require('./vue');
-let git = require('./git');
-let jquery = require('./jquery');
+const fs = require('fs')
+const dirOutput = {};
 
-module.exports = {
-   '/react': react,
-   '/algorithm/': algorithm,
-   '/structure/': structure,
-   '/javascript/': javascript,
-   '/network/': network,
-   '/operator': operator,
-   '/node': node,
-   '/html': html,
-   '/css': css,
-   '/vue': vue,
-   '/git': git,
-   '/jquery': jquery
-}
+// 自动化导入目录脚本
+fs.readdirSync(__dirname).forEach(file => {
+   if(file === 'index.js') return;
+   const route = require(`./${file}`)
+   let path = file.slice(0, -3)
+   dirOutput[`/${path}`] = route
+})
+
+module.exports = dirOutput;

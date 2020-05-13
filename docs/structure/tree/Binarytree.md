@@ -8,8 +8,9 @@
 
 <img src="/img/288px-Binary_tree.svg.png" width="400">
 
-## 遍历
+## 深度优先遍历
 ### 前序遍历
+指先访问根，然后访问子树的遍历方式
 ```java
 /**
  * Definition for a binary tree node.
@@ -39,6 +40,7 @@ class Solution {
 ```
 
 ### 中序遍历
+指先访问左（右）子树，然后访问根，最后访问右（左）子树的遍历方式
 ```java
 /**
  * Definition for a binary tree node.
@@ -66,6 +68,7 @@ class Solution {
 ```
 
 ### 后序遍历
+指先访问子树，然后访问根的遍历方式
 ```java
 /**
  * Definition for a binary tree node.
@@ -92,6 +95,7 @@ class Solution {
 }
 ```
 
+## 广度优先遍历
 ### 层次遍历
 ```java
 /**

@@ -54,18 +54,18 @@ module.exports = {
         link: '/git/'
       },
       {
-        text: '计算机网络',
+        text: 'Network',
         link: '/network/'
       },
       {
-        text: '运维',
+        text: 'BackEnd',
         link: '/operator/'
       },
       {
-        text: '算法',
+        text: 'Algorithm',
         link: '/algorithm/'
       },{
-        text: '数据结构',
+        text: 'Structure',
         link: '/structure/'
       },{ 
         text: 'GitHub', 

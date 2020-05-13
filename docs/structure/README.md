@@ -5,7 +5,7 @@
 
 - 线性结构  
    - 线性表(Linear list)
-      - 顺序存储结构
+      - 顺序存储结构：顺序表  
       - 链式存储结构：链表(link list)
    - 队列  
    - 栈  
@@ -14,10 +14,11 @@
 - 非线性结构  
    - 树   
       - 二叉树  
+         - 二叉搜索树
 
-- 集合 set  
-- 键值对 key-value  
-   - map 
-      - hashMap    
-   - hashTable  
-   - dictionary  
+- 集合 
+   - 键值对 
+      - map 
+         - hashMap    
+      - hashTable  
+      - dictionary  

@@ -51,7 +51,10 @@ module.exports = [{
    children: [
       // ['/structure/tree/ployfill.md', '实现'],
       ['/structure/tree/Binarytree.md', '二叉树'],
-      ['/structure/tree/Binarytreetrain.md', '二叉树训练题']
+      ['/structure/tree/Binarytreetrain.md', '二叉树训练题'],
+      ['/structure/tree/BinarySearchTree.md', '二叉搜索树'],
+      ['/structure/tree/BinarySearchTreetrain.md', '二叉搜索树训练题'],    
+      ['/structure/tree/heap.md', '堆'],
    ]
 }, {
    title: '哈希表', // 必要的

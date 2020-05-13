@@ -21,6 +21,7 @@ module.exports = [{
    collapsable: true, // 可选的, 默认值是 true,
    sidebarDepth: 2, // 可选的, 默认值是 1
    children: [
+      ['/javascript/improve/JIT.md', 'JavaScript 编译原理'],
       ['/javascript/improve/this.md', 'this'],
       ['/javascript/improve/scope.md', '执行期上下文，作用域链，闭包'],
    ]
@@ -30,7 +31,10 @@ module.exports = [{
    collapsable: true, // 可选的, 默认值是 true,
    sidebarDepth: 2, // 可选的, 默认值是 1
    children: [
-      ['/javascript/es6/promise.md', 'promise']
+      ['/javascript/es6/as.md', '异步编程'],
+      ['/javascript/es6/promise.md', 'promise'],
+      ['/javascript/es6/generator.md', 'generator'],
+      // ['/javascript/es6/async.md', 'async/await'],
    ]
 },  {
    title: 'ajax', // 必要的

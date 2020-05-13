@@ -28,7 +28,7 @@ npm start 或 yarn start
 npm run build 或 yarn build
 ```
 
-## [文件夹结构](https://www.html.cn/create-react-app/docs/folder-structure/)
+[文件夹结构](https://www.html.cn/create-react-app/docs/folder-structure/)
 
 ## 使用 typescript
 要使用 TypeScript 启动新的 Create React App 项目，你可以运行
