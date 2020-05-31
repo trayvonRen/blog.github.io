@@ -66,4 +66,16 @@ module.exports = [{
       // ['/structure/hashtable/Binarytree.md', '二叉树'],
       ['/structure/hashtable/train.md', '训练题']
    ]
+}, {
+   title: '课程笔记', // 必要的
+   path: '/structure/c/', // 可选的, 应该是一个绝对路径
+   collapsable: true, // 可选的, 默认值是 true,
+   sidebarDepth: 2, // 可选的, 默认值是 1
+   children: [
+      ['/structure/c/introduction.md', '绪论'],
+      ['/structure/c/linearTable.md', '线性表'],
+
+      // ['/structure/hashtable/Binarytree.md', '二叉树'],
+      // ['/structure/hashtable/train.md', '训练题']
+   ]
 }]
