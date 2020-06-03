@@ -16,10 +16,11 @@ module.exports = [{
    collapsable: true, // 可选的, 默认值是 true,
    sidebarDepth: 2, // 可选的, 默认值是 1
    children: [
-      ['/algorithm/sort/bubble.md', '冒泡排序'],
-      ['/algorithm/sort/Selection.md', '选择排序'],
-      ['/algorithm/sort/quick.md', '快速排序'],
       ['/algorithm/sort/insertion.md', '插入排序'],
+      ['/algorithm/sort/shellSort.md', '希尔排序'],
+      ['/algorithm/sort/bubble.md', '冒泡排序'],
+      ['/algorithm/sort/quick.md', '快速排序'],
+      ['/algorithm/sort/Selection.md', '选择排序'],
       ['/algorithm/sort/heapsort.md', '堆排序'],
    ]
 }, {

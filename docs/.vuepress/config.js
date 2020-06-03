@@ -1,12 +1,15 @@
-let sidebar = require('./directory/index');
+let sidebar = require('./directory/index')
 
 module.exports = {
   description: 'rcw',
   head: [
-    ['link', {
-      rel: 'icon',
-      href: '/icon/logo.png'
-    }]
+    [
+      'link',
+      {
+        rel: 'icon',
+        href: '/icon/logo.png',
+      },
+    ],
   ],
   base: '/',
   title: '返回首页',
@@ -15,7 +18,7 @@ module.exports = {
     // 作为特例，默认语言可以使用 '/' 作为其路径。
     '/': {
       lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
-    }
+    },
   },
   themeConfig: {
     smoothScroll: true,
@@ -23,58 +26,60 @@ module.exports = {
     nav: [
       {
         text: 'Html',
-        link: '/html/'
+        link: '/html/',
       },
       {
         text: 'Css',
-        link: '/css/'
+        link: '/css/',
       },
       {
         text: 'Javascript',
-        link: '/javascript/'
+        link: '/javascript/',
       },
       {
         text: 'Jquery',
-        link: '/jquery/'
+        link: '/jquery/',
       },
       {
         text: 'Vue',
-        link: '/vue/'
+        link: '/vue/',
       },
       {
         text: 'React',
-        link: '/react/'
+        link: '/react/',
       },
       {
         text: 'Node',
-        link: '/node/'
-      },
-      {
-        text: 'Git',
-        link: '/git/'
+        link: '/node/',
       },
       {
         text: 'Network',
-        link: '/network/'
+        link: '/network/',
       },
       {
         text: 'BackEnd',
-        link: '/operator/'
+        link: '/operator/',
       },
       {
         text: 'Algorithm',
-        link: '/algorithm/'
-      },{
+        link: '/algorithm/',
+      },
+      {
         text: 'Structure',
-        link: '/structure/'
-      },{ 
-        text: 'GitHub', 
-        link: 'https://github.com/woyasuohen6?tab=repositories' 
+        link: '/structure/',
+      },
+      {
+        text: 'Other',
+        link: '/other/',
+      },
+      {
+        text: 'GitHub',
+        link: 'https://github.com/woyasuohen6?tab=repositories',
       },
     ],
 
     // 侧边栏
-    sidebar
+    sidebar,
   },
   sidebarDepth: 3, // 默认 1 提取到 h2，0 为禁用，2 为 h2，h3
   displayAllHeaders: false, // 默认值：false 侧边栏只会显示由当前活动页面的标题组成的链接
@@ -97,5 +102,5 @@ module.exports = {
         },
       },
     ],
-  ]
+  ],
 }
