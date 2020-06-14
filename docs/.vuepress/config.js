@@ -36,10 +36,10 @@ module.exports = {
         text: 'Javascript',
         link: '/javascript/',
       },
-      {
-        text: 'Jquery',
-        link: '/jquery/',
-      },
+      // {
+      //   text: 'Jquery',
+      //   link: '/jquery/',
+      // },
       {
         text: 'Vue',
         link: '/vue/',
