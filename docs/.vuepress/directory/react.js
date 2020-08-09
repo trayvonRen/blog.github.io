@@ -12,6 +12,7 @@ module.exports = [
       ['/react/base/data.md', 'Props & State'],
       ['/react/base/proptypes.md', 'PropTypes'],
       ['/react/base/ref.md', 'Refs'],
+      ['/react/base/context.md', 'Context'],
       ['/react/base/JSX.md', '深入 JSX'],
     ],
   },
@@ -21,6 +22,7 @@ module.exports = [
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 2, // 可选的, 默认值是 1
     children: [['/react/improve/splitting.md', '代码分割']],
+    children: [['/react/improve/hook.md', 'Hook']],
   },
   {
     title: 'redux', // 必要的
@@ -36,6 +38,16 @@ module.exports = [
       ['/react/redux/middleware.md', '中间件'],
       ['/react/redux/redux-thunk.md', 'redux-thunk'],
       ['/react/redux/redux-saga.md', 'redux-saga'],
+    ],
+  },
+  {
+    title: 'react-router', // 必要的
+    path: '/react/router/', // 可选的, 应该是一个绝对路径
+    collapsable: true, // 可选的, 默认值是 true,
+    sidebarDepth: 2, // 可选的, 默认值是 1
+    children: [
+      ['/react/router/base.md', '基础用法'],
+      ['/react/router/components.md', '组件'],
     ],
   },
   {
