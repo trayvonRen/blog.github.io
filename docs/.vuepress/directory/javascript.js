@@ -27,6 +27,8 @@ module.exports = [
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 2, // 可选的, 默认值是 1
     children: [
+      ['/javascript/improve/eventLoop.md', '事件循环'],
+
       ['/javascript/improve/JIT.md', 'JavaScript 编译原理'],
       ['/javascript/improve/this.md', 'this'],
       ['/javascript/improve/scope.md', '执行期上下文，作用域链，闭包'],
@@ -40,6 +42,8 @@ module.exports = [
     children: [
       ['/javascript/es6/as.md', '异步编程'],
       ['/javascript/es6/promise.md', 'promise'],
+      ['/javascript/es6/promiseA.md', 'promise 实现'],
+
       ['/javascript/es6/generator.md', 'generator'],
       // ['/javascript/es6/async.md', 'async/await'],
     ],
@@ -60,5 +64,16 @@ module.exports = [
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 2, // 可选的, 默认值是 1
     children: [['/javascript/web/history.md', 'History Api']],
+  },
+  {
+    title: 'DOM', // 必要的
+    path: '/javascript/dom/', // 可选的, 应该是一个绝对路径
+    collapsable: true, // 可选的, 默认值是 true,
+    sidebarDepth: 2, // 可选的, 默认值是 1
+    children: [
+      ['/javascript/dom/base.md', 'DOM 基础'],
+      ['/javascript/dom/operation.md', 'DOM 操作'],
+      ['/javascript/dom/event.md', '事件'],
+    ],
   },
 ]

@@ -69,12 +69,16 @@ module.exports = {
         link: '/structure/',
       },
       {
+        text: 'Leetcode',
+        link: '/leetcode/',
+      },
+      {
         text: 'Other',
         link: '/other/',
       },
       {
         text: 'GitHub',
-        link: 'https://github.com/woyasuohen6?tab=repositories',
+        link: 'https://github.com/trayvonRen/woyasuohen6.github.io',
       },
     ],
 

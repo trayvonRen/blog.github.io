@@ -17,12 +17,30 @@ module.exports = [
     ],
   },
   {
+    title: 'Hook', // 必要的
+    path: '/react/hook/', // 可选的, 应该是一个绝对路径
+    collapsable: true, // 可选的, 默认值是 true,
+    sidebarDepth: 2, // 可选的, 默认值是 1
+    children: [
+      ['/react/hook/hookRules.md', 'hook 使用规则'],
+      ['/react/hook/stateHook.md', 'useState'],
+      ['/react/hook/effectHook.md', 'useEffect'],
+      ['/react/hook/contextHook.md', 'useContext'],
+      ['/react/hook/useCallback.md', 'useCallback'],
+      ['/react/hook/useMemo.md', 'useMemo'],
+      ['/react/hook/useRef.md', 'useRef'],
+      ['/react/hook/customHook.md', '自定义 Hook'],
+    ],
+  },
+  {
     title: 'react 进阶', // 必要的
     path: '/react/improve/', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 2, // 可选的, 默认值是 1
-    children: [['/react/improve/splitting.md', '代码分割']],
-    children: [['/react/improve/hook.md', 'Hook']],
+    children: [
+      ['/react/improve/splitting.md', '代码分割'],
+      ['/react/improve/optimization1.md', '性能优化：组件更新'],
+    ],
   },
   {
     title: 'redux', // 必要的
