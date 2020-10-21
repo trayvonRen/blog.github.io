@@ -5,20 +5,35 @@ module.exports = [
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 2, // 可选的, 默认值是 1
     children: [
+      ['/leetcode/leetcode/1.md', '1. 两数之和'],
       ['/leetcode/leetcode/5.md', '5. 最长回文子串'],
+      ['/leetcode/leetcode/7.md', '7. 整数反转'],
       ['/leetcode/leetcode/14.md', '14. 最长公共前缀'],
+      ['/leetcode/leetcode/19.md', '19. 删除链表的倒数第N个节点'],
       ['/leetcode/leetcode/26.md', '26. 删除排序数组中的重复项'],
       ['/leetcode/leetcode/27.md', '27. 移除元素'],
       ['/leetcode/leetcode/28.md', '28. 实现 strStr()'],
       ['/leetcode/leetcode/35.md', '35. 搜索插入位置'],
+      ['/leetcode/leetcode/38.md', '38. 外观数列'],
       ['/leetcode/leetcode/56.md', '56. 合并区间'],
+      ['/leetcode/leetcode/66.md', '66. 加一'],
+      ['/leetcode/leetcode/70.md', '70. 爬楼梯'],
       ['/leetcode/leetcode/118.md', '118. 杨辉三角'],
       ['/leetcode/leetcode/119.md', '119. 杨辉三角 II'],
+      ['/leetcode/leetcode/122.md', '122. 买卖股票的最佳时机 II'],
+      ['/leetcode/leetcode/125.md', '125. 验证回文串'],
+      ['/leetcode/leetcode/136.md', '136. 只出现一次的数字'],
       ['/leetcode/leetcode/153.md', '153. 寻找旋转排序数组中的最小值'],
       ['/leetcode/leetcode/167.md', '167. 两数之和 II - 输入有序数组'],
+      ['/leetcode/leetcode/189.md', '189. 旋转数组'],
       ['/leetcode/leetcode/209.md', '209. 长度最小的子数组'],
+      ['/leetcode/leetcode/217.md', '217. 存在重复元素'],
+      ['/leetcode/leetcode/237.md', '237. 删除链表中的节点'],
+      ['/leetcode/leetcode/242.md', '242. 有效的字母异位词'],
       ['/leetcode/leetcode/283.md', '283. 移动零'],
       ['/leetcode/leetcode/344.md', '344. 反转字符串'],
+      ['/leetcode/leetcode/350.md', '350. 两个数组的交集 II'],
+      ['/leetcode/leetcode/387.md', '387. 字符串中的第一个唯一字符'],
       ['/leetcode/leetcode/485.md', '485. 最大连续1的个数'],
       ['/leetcode/leetcode/557.md', '557. 反转字符串中的单词 III'],
       ['/leetcode/leetcode/561.md', '561. 数组拆分 I'],
@@ -33,6 +48,13 @@ module.exports = [
     children: [['/leetcode/offer/58-1.md', '58 - 1. 翻转单词顺序']],
   },
   {
+    title: '字符串', // 必要的
+    path: '/leetcode/string/', // 可选的, 应该是一个绝对路径
+    collapsable: true, // 可选的, 默认值是 true,
+    sidebarDepth: 2, // 可选的, 默认值是 1
+    children: [['/leetcode/string/q.md', '训练题']],
+  },
+  {
     title: '数组', // 必要的
     path: '/leetcode/array/', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
@@ -40,11 +62,11 @@ module.exports = [
     children: [['/leetcode/array/q.md', '训练题']],
   },
   {
-    title: '字符串', // 必要的
-    path: '/leetcode/string/', // 可选的, 应该是一个绝对路径
+    title: '链表', // 必要的
+    path: '/leetcode/linklist/', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 2, // 可选的, 默认值是 1
-    children: [['/leetcode/string/q.md', '训练题']],
+    children: [['/leetcode/linklist/q.md', '训练题']],
   },
   {
     title: '二分查找', // 必要的
@@ -59,5 +81,12 @@ module.exports = [
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 2, // 可选的, 默认值是 1
     children: [['/leetcode/doublePointer/q.md', '训练题']],
+  },
+  {
+    title: '动态规划', // 必要的
+    path: '/leetcode/dp/', // 可选的, 应该是一个绝对路径
+    collapsable: true, // 可选的, 默认值是 true,
+    sidebarDepth: 2, // 可选的, 默认值是 1
+    children: [['/leetcode/dp/q.md', '训练题']],
   },
 ]
