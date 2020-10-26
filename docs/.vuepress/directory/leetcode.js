@@ -23,6 +23,8 @@ module.exports = [
       ['/leetcode/leetcode/122.md', '122. 买卖股票的最佳时机 II'],
       ['/leetcode/leetcode/125.md', '125. 验证回文串'],
       ['/leetcode/leetcode/136.md', '136. 只出现一次的数字'],
+      ['/leetcode/leetcode/141.md', '141. 环形链表'],
+
       ['/leetcode/leetcode/153.md', '153. 寻找旋转排序数组中的最小值'],
       ['/leetcode/leetcode/167.md', '167. 两数之和 II - 输入有序数组'],
       ['/leetcode/leetcode/189.md', '189. 旋转数组'],
