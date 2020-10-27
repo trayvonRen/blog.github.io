@@ -24,8 +24,10 @@ module.exports = [
       ['/leetcode/leetcode/125.md', '125. 验证回文串'],
       ['/leetcode/leetcode/136.md', '136. 只出现一次的数字'],
       ['/leetcode/leetcode/141.md', '141. 环形链表'],
+      ['/leetcode/leetcode/142.md', '142. 环形链表 II'],
 
       ['/leetcode/leetcode/153.md', '153. 寻找旋转排序数组中的最小值'],
+      ['/leetcode/leetcode/160.md', '160. 相交链表'],
       ['/leetcode/leetcode/167.md', '167. 两数之和 II - 输入有序数组'],
       ['/leetcode/leetcode/189.md', '189. 旋转数组'],
       ['/leetcode/leetcode/209.md', '209. 长度最小的子数组'],

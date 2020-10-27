@@ -4,7 +4,10 @@ module.exports = [
     path: '/network/network/', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 2, // 可选的, 默认值是 1
-    children: [['/network/network/transport.md', '运输层']],
+    children: [
+      ['/network/network/transport.md', '运输层'],
+      ['/network/network/tcp.md', 'TCP 详解'],
+    ],
   },
   {
     title: '浏览器', // 必要的
