@@ -25,16 +25,18 @@ module.exports = [
       ['/leetcode/leetcode/136.md', '136. 只出现一次的数字'],
       ['/leetcode/leetcode/141.md', '141. 环形链表'],
       ['/leetcode/leetcode/142.md', '142. 环形链表 II'],
-
       ['/leetcode/leetcode/153.md', '153. 寻找旋转排序数组中的最小值'],
       ['/leetcode/leetcode/160.md', '160. 相交链表'],
       ['/leetcode/leetcode/167.md', '167. 两数之和 II - 输入有序数组'],
       ['/leetcode/leetcode/189.md', '189. 旋转数组'],
+      ['/leetcode/leetcode/203.md', '203. 移除链表元素'],
       ['/leetcode/leetcode/209.md', '209. 长度最小的子数组'],
       ['/leetcode/leetcode/217.md', '217. 存在重复元素'],
+      ['/leetcode/leetcode/234.md', '234. 回文链表'],
       ['/leetcode/leetcode/237.md', '237. 删除链表中的节点'],
       ['/leetcode/leetcode/242.md', '242. 有效的字母异位词'],
       ['/leetcode/leetcode/283.md', '283. 移动零'],
+      ['/leetcode/leetcode/328.md', '328. 奇偶链表'],
       ['/leetcode/leetcode/344.md', '344. 反转字符串'],
       ['/leetcode/leetcode/350.md', '350. 两个数组的交集 II'],
       ['/leetcode/leetcode/387.md', '387. 字符串中的第一个唯一字符'],
@@ -49,7 +51,10 @@ module.exports = [
     path: '/leetcode/offer/', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 2, // 可选的, 默认值是 1
-    children: [['/leetcode/offer/58-1.md', '58 - 1. 翻转单词顺序']],
+    children: [
+      ['/leetcode/offer/58-1.md', '58 - 1. 翻转单词顺序'],
+      ['/leetcode/offer/24.md', '24. 反转链表'],
+    ],
   },
   {
     title: '字符串', // 必要的

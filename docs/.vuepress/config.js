@@ -77,6 +77,10 @@ module.exports = {
         link: '/other/',
       },
       {
+        text: '面试题',
+        link: '/question/',
+      },
+      {
         text: 'GitHub',
         link: 'https://github.com/trayvonRen/woyasuohen6.github.io',
       },
