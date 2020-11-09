@@ -60,14 +60,14 @@ module.exports = {
         text: 'BackEnd',
         link: '/operator/',
       },
-      {
-        text: 'Algorithm',
-        link: '/algorithm/',
-      },
-      {
-        text: 'Structure',
-        link: '/structure/',
-      },
+      // {
+      //   text: 'Algorithm',
+      //   link: '/algorithm/',
+      // },
+      // {
+      //   text: 'Structure',
+      //   link: '/structure/',
+      // },
       {
         text: 'Leetcode',
         link: '/leetcode/',
@@ -77,7 +77,7 @@ module.exports = {
         link: '/other/',
       },
       {
-        text: '面试题',
+        text: '面试题突击',
         link: '/question/',
       },
       {
