@@ -1,4 +1,4 @@
-## 受控组件 & 非受控组件
+<!-- ## 受控组件 & 非受控组件
 
 [参考资料](https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/)
 
@@ -69,7 +69,7 @@ class Form extends Component {
 
 ## HOOK
 
-> Hook 是一些可以让你在函数组件里“钩入” React state 及生命周期等特性的函数。  
+> Hook 是一些可以让你在函数组件里“钩入” React state 及生命周期等特性的函数。
 > Hook 不能在 class 组件中使用 —— 这使得你不使用 class 也能使用 React。
 
 ### HOOK 的优势
@@ -91,7 +91,7 @@ class Form extends Component {
 
 不要在普通的 JavaScript 函数中调用 Hook。你可以：
 
-✅ 在 React 的函数组件中调用 Hook  
+✅ 在 React 的函数组件中调用 Hook
 ✅ 在自定义 Hook 中调用其他 Hook
 
 ### HOOK API
@@ -110,4 +110,4 @@ class Form extends Component {
 
 :::warning
 useCallback, useMemo 只能作为性能优化的手段, react 并不能保证使用之后一定符合预期，他们本质上是为了解决子组件传值时过度重新渲染的问题。
-:::
+::: -->

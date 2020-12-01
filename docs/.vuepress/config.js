@@ -1,6 +1,9 @@
 let sidebar = require('./directory/index')
 
 module.exports = {
+  themeConfig: {
+    lastUpdated: 'Last Updated', // string | boolean
+  },
   description: 'rcw',
   head: [
     [
@@ -24,14 +27,14 @@ module.exports = {
     smoothScroll: true,
     // 顶部导航
     nav: [
-      {
-        text: 'Html',
-        link: '/html/',
-      },
-      {
-        text: 'Css',
-        link: '/css/',
-      },
+      // {
+      //   text: 'Html',
+      //   link: '/html/',
+      // },
+      // {
+      //   text: 'Css',
+      //   link: '/css/',
+      // },
       {
         text: 'Javascript',
         link: '/javascript/',
@@ -40,24 +43,24 @@ module.exports = {
       //   text: 'Jquery',
       //   link: '/jquery/',
       // },
-      {
-        text: 'Vue',
-        link: '/vue/',
-      },
+      // {
+      //   text: 'Vue',
+      //   link: '/vue/',
+      // },
       {
         text: 'React',
         link: '/react/',
       },
+      // {
+      //   text: 'Node',
+      //   link: '/node/',
+      // },
       {
-        text: 'Node',
-        link: '/node/',
-      },
-      {
-        text: 'Network',
+        text: '计算机网络',
         link: '/network/',
       },
       {
-        text: 'BackEnd',
+        text: '后端',
         link: '/operator/',
       },
       // {
@@ -69,15 +72,15 @@ module.exports = {
       //   link: '/structure/',
       // },
       {
-        text: 'Leetcode',
+        text: '数据结构与算法',
         link: '/leetcode/',
       },
       {
-        text: 'Other',
+        text: '其他',
         link: '/other/',
       },
       {
-        text: '面试题突击',
+        text: '面试题',
         link: '/question/',
       },
       {
@@ -89,7 +92,7 @@ module.exports = {
     // 侧边栏
     sidebar,
   },
-  sidebarDepth: 3, // 默认 1 提取到 h2，0 为禁用，2 为 h2，h3
+  sidebarDepth: 2, // 默认 1 提取到 h2，0 为禁用，2 为 h2，h3
   displayAllHeaders: false, // 默认值：false 侧边栏只会显示由当前活动页面的标题组成的链接
   activeHeaderLinks: true, // 默认值：true 滚动时通过 hash 高亮侧边栏标题
 

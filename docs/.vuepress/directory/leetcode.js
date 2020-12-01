@@ -21,8 +21,10 @@ module.exports = [
       ['/leetcode/leetcode/66.md', '66. 加一'],
       ['/leetcode/leetcode/70.md', '70. 爬楼梯'],
       ['/leetcode/leetcode/94.md', '94. 二叉树的中序遍历'],
+      ['/leetcode/leetcode/101.md', '101. 对称二叉树'],
       ['/leetcode/leetcode/102.md', '102. 二叉树的层序遍历'],
-
+      ['/leetcode/leetcode/104.md', '104. 二叉树的最大深度'],
+      ['/leetcode/leetcode/112.md', '112. 路径总和'],
       ['/leetcode/leetcode/118.md', '118. 杨辉三角'],
       ['/leetcode/leetcode/119.md', '119. 杨辉三角 II'],
       ['/leetcode/leetcode/122.md', '122. 买卖股票的最佳时机 II'],
@@ -32,7 +34,6 @@ module.exports = [
       ['/leetcode/leetcode/142.md', '142. 环形链表 II'],
       ['/leetcode/leetcode/144.md', '144. 二叉树的前序遍历'],
       ['/leetcode/leetcode/145.md', '145. 二叉树的后序遍历'],
-
       ['/leetcode/leetcode/153.md', '153. 寻找旋转排序数组中的最小值'],
       ['/leetcode/leetcode/160.md', '160. 相交链表'],
       ['/leetcode/leetcode/167.md', '167. 两数之和 II - 输入有序数组'],
