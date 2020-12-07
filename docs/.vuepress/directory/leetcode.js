@@ -24,7 +24,10 @@ module.exports = [
       ['/leetcode/leetcode/101.md', '101. 对称二叉树'],
       ['/leetcode/leetcode/102.md', '102. 二叉树的层序遍历'],
       ['/leetcode/leetcode/104.md', '104. 二叉树的最大深度'],
+      ['/leetcode/leetcode/105.md', '105. 从前序与中序遍历序列构造二叉树'],
       ['/leetcode/leetcode/112.md', '112. 路径总和'],
+      ['/leetcode/leetcode/116.md', '116. 填充每个节点的下一个右侧节点指针'],
+      ['/leetcode/leetcode/117.md', '117. 填充每个节点的下一个右侧节点指针 II'],
       ['/leetcode/leetcode/118.md', '118. 杨辉三角'],
       ['/leetcode/leetcode/119.md', '119. 杨辉三角 II'],
       ['/leetcode/leetcode/122.md', '122. 买卖股票的最佳时机 II'],
@@ -38,13 +41,16 @@ module.exports = [
       ['/leetcode/leetcode/160.md', '160. 相交链表'],
       ['/leetcode/leetcode/167.md', '167. 两数之和 II - 输入有序数组'],
       ['/leetcode/leetcode/189.md', '189. 旋转数组'],
+      ['/leetcode/leetcode/200.md', '200. 岛屿数量'],
       ['/leetcode/leetcode/203.md', '203. 移除链表元素'],
       ['/leetcode/leetcode/209.md', '209. 长度最小的子数组'],
       ['/leetcode/leetcode/217.md', '217. 存在重复元素'],
       ['/leetcode/leetcode/234.md', '234. 回文链表'],
+      ['/leetcode/leetcode/236.md', '236. 二叉树的最近公共祖先'],
       ['/leetcode/leetcode/237.md', '237. 删除链表中的节点'],
       ['/leetcode/leetcode/242.md', '242. 有效的字母异位词'],
       ['/leetcode/leetcode/283.md', '283. 移动零'],
+      ['/leetcode/leetcode/297.md', '297. 二叉树的序列化与反序列化'],
       ['/leetcode/leetcode/328.md', '328. 奇偶链表'],
       ['/leetcode/leetcode/344.md', '344. 反转字符串'],
       ['/leetcode/leetcode/350.md', '350. 两个数组的交集 II'],
@@ -53,6 +59,7 @@ module.exports = [
       ['/leetcode/leetcode/557.md', '557. 反转字符串中的单词 III'],
       ['/leetcode/leetcode/561.md', '561. 数组拆分 I'],
       ['/leetcode/leetcode/724.md', '724. 寻找数组的中心索引'],
+      ['/leetcode/leetcode/752.md', '752. 打开转盘锁'],
     ],
   },
   {
@@ -62,7 +69,7 @@ module.exports = [
     sidebarDepth: 2, // 可选的, 默认值是 1
     children: [
       ['/leetcode/offer/1.md', '1. 二维数组中的查找'],
-      ['/leetcode/offer/58-1.md', '58 - 1. 翻转单词顺序'],
+      ['/leetcode/offer/58-1.md', '58 - I. 翻转单词顺序'],
       ['/leetcode/offer/24.md', '24. 反转链表'],
     ],
   },
@@ -121,5 +128,15 @@ module.exports = [
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 2, // 可选的, 默认值是 1
     children: [['/leetcode/dp/q.md', '训练题']],
+  },
+  {
+    title: 'BFS/DFS', // 必要的
+    path: '/leetcode/bfs/', // 可选的, 应该是一个绝对路径
+    collapsable: true, // 可选的, 默认值是 true,
+    sidebarDepth: 2, // 可选的, 默认值是 1
+    children: [
+      ['/leetcode/bfs/bfs.md', 'BFS'],
+      ['/leetcode/bfs/bfsq.md', 'BFS 训练题'],
+    ],
   },
 ]

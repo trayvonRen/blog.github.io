@@ -31,10 +31,10 @@ module.exports = {
       //   text: 'Html',
       //   link: '/html/',
       // },
-      // {
-      //   text: 'Css',
-      //   link: '/css/',
-      // },
+      {
+        text: 'Css',
+        link: '/css/',
+      },
       {
         text: 'Javascript',
         link: '/javascript/',
@@ -55,10 +55,10 @@ module.exports = {
       //   text: 'Node',
       //   link: '/node/',
       // },
-      {
-        text: '计算机网络',
-        link: '/network/',
-      },
+      // {
+      //   text: '计算机网络',
+      //   link: '/network/',
+      // },
       {
         text: '后端',
         link: '/operator/',

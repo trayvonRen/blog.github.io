@@ -9,6 +9,7 @@ module.exports = [
       ['/question/JavaScript/debounce.md', '防抖/节流'],
       ['/question/JavaScript/shuffle.md', '洗牌算法'],
       ['/question/JavaScript/float0.1.md', '0.1 + 0.2 == 0.3'],
+      ['/question/JavaScript/emmit.md', '发布订阅模式-手写事件触发器'],
     ],
   },
   // {

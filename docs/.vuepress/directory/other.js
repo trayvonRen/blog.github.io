@@ -10,6 +10,7 @@ module.exports = [
       ['/other/browser/reflow.md', '回流/重绘'],
       ['/other/browser/requestidlecallback.md', 'requestAnimationFrame / requestIdleCallback'],
       ['/other/browser/cache.md', '浏览器缓存'],
+      ['/other/browser/priority.md', '浏览器资源加载优先级'],
     ],
   },
   {
@@ -38,12 +39,46 @@ module.exports = [
       // ['/other/webpack/webpackMerge.md', 'webpackMerge 合并配置文件'],
     ],
   },
+
+  {
+    title: '计算机网络', // 必要的
+    path: '/other/network/', // 可选的, 应该是一个绝对路径
+    collapsable: true, // 可选的, 默认值是 true,
+    sidebarDepth: 1, // 可选的, 默认值是 1
+    children: [
+      ['/other/network/transport.md', 'TCP/IP'],
+      ['/other/network/tcp.md', 'TCP 链接建立与释放'],
+      ['/other/network/reliable.md', 'TCP 可靠传输工作原理'],
+      ['/other/network/flowControl.md', 'TCP 流量控制'],
+      ['/other/network/congestion.md', 'TCP 拥塞控制'],
+    ],
+  },
+
+  {
+    title: 'HTTP', // 必要的
+    path: '/other/http/', // 可选的, 应该是一个绝对路径
+    collapsable: true, // 可选的, 默认值是 true,
+    sidebarDepth: 1, // 可选的, 默认值是 1
+    children: [['/other/http/code.md', 'http 状态码']],
+  },
+  {
+    title: 'Web 安全', // 必要的
+    path: '/other/security/', // 可选的, 应该是一个绝对路径
+    collapsable: true, // 可选的, 默认值是 true,
+    sidebarDepth: 1, // 可选的, 默认值是 1
+    children: [['/other/security/xsrf.md', 'XSRF 攻击']],
+  },
   {
     title: '设计模式', // 必要的
     path: '/other/design/', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 1, // 可选的, 默认值是 1
-    children: [['/other/design/closed.md', '设计原则之开放-封闭原则']],
+    children: [
+      ['/other/design/coupling.md', '耦合性'],
+      ['/other/design/closed.md', '设计原则之开放-封闭原则'],
+      ['/other/design/factory.md', '设计模式之工厂模式'],
+      ['/other/design/observer.md', '设计模式之观察者模式/发布-订阅模式'],
+    ],
   },
 
   // {
@@ -53,7 +88,7 @@ module.exports = [
   //   sidebarDepth: 2, // 可选的, 默认值是 1
   //   children: [
   //     ['/other/webpack2/hmr.md', 'hot module replacement'],
-  //     ['/other/webpack2/treeShaking.md', 'tree shaking'],
+  //     ['/other/webpack2/treeShaking.md', 'tree shaking'],,
   //     ['/other/webpack2/codeSplitting.md', 'code splitting'],
   //     ['/other/webpack2/SplitChunksPlugin.md', 'SplitChunksPlugin'],
   //     ['/other/webpack2/MiniCssExtractPlugin.md', 'MiniCssExtractPlugin'],
