@@ -51,6 +51,10 @@ module.exports = {
         text: 'React',
         link: '/react/',
       },
+      {
+        text: '前端工程化',
+        link: '/engineering/',
+      },
       // {
       //   text: 'Node',
       //   link: '/node/',

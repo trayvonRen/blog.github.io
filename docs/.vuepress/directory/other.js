@@ -66,7 +66,10 @@ module.exports = [
     path: '/other/security/', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 1, // 可选的, 默认值是 1
-    children: [['/other/security/xsrf.md', 'XSRF 攻击']],
+    children: [
+      ['/other/security/xss.md', 'XSS 攻击'],
+      ['/other/security/xsrf.md', 'XSRF 攻击'],
+    ],
   },
   {
     title: '设计模式', // 必要的

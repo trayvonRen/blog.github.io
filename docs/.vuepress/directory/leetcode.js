@@ -38,6 +38,7 @@ module.exports = [
       ['/leetcode/leetcode/144.md', '144. 二叉树的前序遍历'],
       ['/leetcode/leetcode/145.md', '145. 二叉树的后序遍历'],
       ['/leetcode/leetcode/153.md', '153. 寻找旋转排序数组中的最小值'],
+      ['/leetcode/leetcode/155.md', '155. 最小栈'],
       ['/leetcode/leetcode/160.md', '160. 相交链表'],
       ['/leetcode/leetcode/167.md', '167. 两数之和 II - 输入有序数组'],
       ['/leetcode/leetcode/189.md', '189. 旋转数组'],
@@ -86,6 +87,16 @@ module.exports = [
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 2, // 可选的, 默认值是 1
     children: [['/leetcode/array/q.md', '训练题']],
+  },
+  {
+    title: '栈/队列', // 必要的
+    path: '/leetcode/stack/', // 可选的, 应该是一个绝对路径
+    collapsable: true, // 可选的, 默认值是 true,
+    sidebarDepth: 2, // 可选的, 默认值是 1
+    children: [
+      ['/leetcode/stack/stackq.md', '栈训练题'],
+      ['/leetcode/stack/queueq.md', '队列训练题'],
+    ],
   },
   {
     title: '链表', // 必要的
