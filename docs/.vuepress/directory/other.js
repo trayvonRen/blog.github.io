@@ -51,6 +51,7 @@ module.exports = [
       ['/other/network/reliable.md', 'TCP 可靠传输工作原理'],
       ['/other/network/flowControl.md', 'TCP 流量控制'],
       ['/other/network/congestion.md', 'TCP 拥塞控制'],
+      ['/other/network/dns.md', 'DNS'],
     ],
   },
 
@@ -59,7 +60,21 @@ module.exports = [
     path: '/other/http/', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 1, // 可选的, 默认值是 1
-    children: [['/other/http/code.md', 'http 状态码']],
+    children: [
+      ['/other/http/url.md', 'URL / URI'],
+      ['/other/http/code.md', 'HTTP 状态码'],
+      ['/other/http/message.md', 'HTTP 报文'],
+      ['/other/http/cookie.md', 'HTTP cookie'],
+      ['/other/http/history.md', 'HTTP 发展历史'],
+      ['/other/http/connection.md', 'HTTP 1.x 链接管理'],
+      ['/other/http/http2.md', 'HTTP 2 更多新特新'],
+      ['/other/http/cryptography.md', 'HTTPS 加密原理'],
+      ['/other/http/tls.md', 'HTTPS 加密过程'],
+      ['/other/http/cross.md', '跨域'],
+      ['/other/http/cors.md', 'HTTP CORS'],
+      ['/other/http/session.md', 'HTTP 会话管理：Session'],
+      ['/other/http/token.md', 'HTTP 会话管理：Token'],
+    ],
   },
   {
     title: 'Web 安全', // 必要的
@@ -69,6 +84,9 @@ module.exports = [
     children: [
       ['/other/security/xss.md', 'XSS 攻击'],
       ['/other/security/xsrf.md', 'XSRF 攻击'],
+      ['/other/security/ddos.md', 'DDOS 攻击'],
+      ['/other/security/clickjacking.md', '点击劫持'],
+      ['/other/security/sql.md', 'SQL 注入攻击'],
     ],
   },
   {

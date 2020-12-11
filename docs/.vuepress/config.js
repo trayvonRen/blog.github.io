@@ -67,10 +67,7 @@ module.exports = {
         text: '后端',
         link: '/operator/',
       },
-      // {
-      //   text: 'Algorithm',
-      //   link: '/algorithm/',
-      // },
+
       // {
       //   text: 'Structure',
       //   link: '/structure/',

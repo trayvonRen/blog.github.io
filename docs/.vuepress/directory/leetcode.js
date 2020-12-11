@@ -11,6 +11,7 @@ module.exports = [
       ['/leetcode/leetcode/7.md', '7. 整数反转'],
       ['/leetcode/leetcode/14.md', '14. 最长公共前缀'],
       ['/leetcode/leetcode/19.md', '19. 删除链表的倒数第N个节点'],
+      ['/leetcode/leetcode/20.md', '20. 有效的括号'],
       ['/leetcode/leetcode/21.md', '21. 合并两个有序链表'],
       ['/leetcode/leetcode/26.md', '26. 删除排序数组中的重复项'],
       ['/leetcode/leetcode/27.md', '27. 移除元素'],
@@ -18,6 +19,7 @@ module.exports = [
       ['/leetcode/leetcode/35.md', '35. 搜索插入位置'],
       ['/leetcode/leetcode/38.md', '38. 外观数列'],
       ['/leetcode/leetcode/56.md', '56. 合并区间'],
+      ['/leetcode/leetcode/62.md', '62. 不同路径'],
       ['/leetcode/leetcode/66.md', '66. 加一'],
       ['/leetcode/leetcode/70.md', '70. 爬楼梯'],
       ['/leetcode/leetcode/94.md', '94. 二叉树的中序遍历'],
@@ -32,11 +34,13 @@ module.exports = [
       ['/leetcode/leetcode/119.md', '119. 杨辉三角 II'],
       ['/leetcode/leetcode/122.md', '122. 买卖股票的最佳时机 II'],
       ['/leetcode/leetcode/125.md', '125. 验证回文串'],
+      ['/leetcode/leetcode/133.md', '133. 克隆图'],
       ['/leetcode/leetcode/136.md', '136. 只出现一次的数字'],
       ['/leetcode/leetcode/141.md', '141. 环形链表'],
       ['/leetcode/leetcode/142.md', '142. 环形链表 II'],
       ['/leetcode/leetcode/144.md', '144. 二叉树的前序遍历'],
       ['/leetcode/leetcode/145.md', '145. 二叉树的后序遍历'],
+      ['/leetcode/leetcode/150.md', '150. 逆波兰表达式求值'],
       ['/leetcode/leetcode/153.md', '153. 寻找旋转排序数组中的最小值'],
       ['/leetcode/leetcode/155.md', '155. 最小栈'],
       ['/leetcode/leetcode/160.md', '160. 相交链表'],
@@ -46,6 +50,7 @@ module.exports = [
       ['/leetcode/leetcode/203.md', '203. 移除链表元素'],
       ['/leetcode/leetcode/209.md', '209. 长度最小的子数组'],
       ['/leetcode/leetcode/217.md', '217. 存在重复元素'],
+      ['/leetcode/leetcode/232.md', '232. 用栈实现队列'],
       ['/leetcode/leetcode/234.md', '234. 回文链表'],
       ['/leetcode/leetcode/236.md', '236. 二叉树的最近公共祖先'],
       ['/leetcode/leetcode/237.md', '237. 删除链表中的节点'],
@@ -57,9 +62,11 @@ module.exports = [
       ['/leetcode/leetcode/350.md', '350. 两个数组的交集 II'],
       ['/leetcode/leetcode/387.md', '387. 字符串中的第一个唯一字符'],
       ['/leetcode/leetcode/485.md', '485. 最大连续1的个数'],
+      ['/leetcode/leetcode/494.md', '494. 目标和'],
       ['/leetcode/leetcode/557.md', '557. 反转字符串中的单词 III'],
       ['/leetcode/leetcode/561.md', '561. 数组拆分 I'],
       ['/leetcode/leetcode/724.md', '724. 寻找数组的中心索引'],
+      ['/leetcode/leetcode/739.md', '739. 每日温度'],
       ['/leetcode/leetcode/752.md', '752. 打开转盘锁'],
     ],
   },
@@ -106,6 +113,13 @@ module.exports = [
     children: [['/leetcode/linklist/q.md', '训练题']],
   },
   {
+    title: '排序算法', // 必要的
+    path: '/leetcode/sort/', // 可选的, 应该是一个绝对路径
+    collapsable: true, // 可选的, 默认值是 true,
+    sidebarDepth: 2, // 可选的, 默认值是 1
+    children: [['/leetcode/sort/quick.md', '快速排序']],
+  },
+  {
     title: '树', // 必要的
     path: '/leetcode/tree/', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
@@ -148,6 +162,8 @@ module.exports = [
     children: [
       ['/leetcode/bfs/bfs.md', 'BFS'],
       ['/leetcode/bfs/bfsq.md', 'BFS 训练题'],
+      ['/leetcode/bfs/dfs.md', 'DFS'],
+      ['/leetcode/bfs/dfsq.md', 'DFS 训练题'],
     ],
   },
 ]
