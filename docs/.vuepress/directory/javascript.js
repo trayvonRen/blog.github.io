@@ -53,6 +53,19 @@ module.exports = [
       // ['/javascript/es6/generator.md', 'generator'],
     ],
   },
+  {
+    title: '正则表达式', // 必要的
+    path: '/javascript/reg/', // 可选的, 应该是一个绝对路径
+    collapsable: true, // 可选的, 默认值是 true,
+    sidebarDepth: 2, // 可选的, 默认值是 1
+    children: [
+      // ['/javascript/es6/Class.md', 'Class'],
+      // ['/javascript/es6/as.md', '异步编程'],
+      // ['/javascript/es6/promise.md', 'promise'],
+      // ['/javascript/es6/promiseA.md', 'promise 实现'],
+      // ['/javascript/es6/generator.md', 'generator'],
+    ],
+  },
   // {
   //   title: 'ajax', // 必要的
   //   path: '/javascript/ajax/', // 可选的, 应该是一个绝对路径

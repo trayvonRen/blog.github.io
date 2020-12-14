@@ -196,7 +196,7 @@ test('测试 runCallback', () => {
 })
 ```
 
-## 模拟模块，改变函数的内部实现
+### 模拟模块，改变函数的内部实现
 
 ```js
 import { getData, runCallback } from './demo'
@@ -210,3 +210,70 @@ test.only('测试 getdata', async () => {
   })
 })
 ```
+
+### 对计时器 mock
+
+```js
+import { timer } from './timer'
+
+jest.useFakeTimers()
+test('timer 测试', () => {
+  const fn = jest.fn()
+  timer(fn)
+  jest.runAllTimers()
+  expect(fn).toHaveBeenCalledTimes(1)
+})
+```
+
+## 快照
+
+使用快照可以测试出文件的变化情况  
+test 会比较上次生产的快照与本次运行结果是否有变化。
+
+```js
+export const generateConfig = () => {
+  return {
+    server: 'http://localhost',
+    port: 8080,
+  }
+}
+```
+
+```js
+import { generateConfig } from './demo2'
+
+test('测试 generateConfig', () => {
+  expect(generateConfig()).toMatchSnapshot()
+})
+```
+
+```js
+import { generateConfig } from './demo2'
+
+test('测试 generateConfig', () => {
+  expect(generateConfig()).toMatchSnapshot({
+    time: expect.any(Date),
+  })
+})
+```
+
+### 行内快照
+
+```js
+test('测试 generateConfig', () => {
+  expect(generateConfig()).toMatchInlineSnapshot(
+    {
+      time: expect.any(Date),
+    },
+    `
+    Object {
+      "port": 8080,
+      "server": "http://localhost",
+      "time": Any<Date>,
+    }
+  `
+  )
+})
+```
+
+## 测试 DOM 节点

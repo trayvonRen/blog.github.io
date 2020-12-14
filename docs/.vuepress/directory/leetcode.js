@@ -61,6 +61,7 @@ module.exports = [
       ['/leetcode/leetcode/344.md', '344. 反转字符串'],
       ['/leetcode/leetcode/350.md', '350. 两个数组的交集 II'],
       ['/leetcode/leetcode/387.md', '387. 字符串中的第一个唯一字符'],
+      ['/leetcode/leetcode/394.md', '394. 字符串解码'],
       ['/leetcode/leetcode/485.md', '485. 最大连续1的个数'],
       ['/leetcode/leetcode/494.md', '494. 目标和'],
       ['/leetcode/leetcode/557.md', '557. 反转字符串中的单词 III'],
@@ -117,7 +118,10 @@ module.exports = [
     path: '/leetcode/sort/', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 2, // 可选的, 默认值是 1
-    children: [['/leetcode/sort/quick.md', '快速排序']],
+    children: [
+      ['/leetcode/sort/bubble.md', '冒泡排序'],
+      ['/leetcode/sort/quick.md', '快速排序'],
+    ],
   },
   {
     title: '树', // 必要的

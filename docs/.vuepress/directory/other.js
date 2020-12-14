@@ -74,6 +74,7 @@ module.exports = [
       ['/other/http/cors.md', 'HTTP CORS'],
       ['/other/http/session.md', 'HTTP 会话管理：Session'],
       ['/other/http/token.md', 'HTTP 会话管理：Token'],
+      ['/other/http/sso.md', '单点登录'],
     ],
   },
   {
@@ -96,6 +97,7 @@ module.exports = [
     sidebarDepth: 1, // 可选的, 默认值是 1
     children: [
       ['/other/design/coupling.md', '耦合性'],
+      ['/other/design/privilege.md', '设计原则之最小权限原则'],
       ['/other/design/closed.md', '设计原则之开放-封闭原则'],
       ['/other/design/factory.md', '设计模式之工厂模式'],
       ['/other/design/observer.md', '设计模式之观察者模式/发布-订阅模式'],
