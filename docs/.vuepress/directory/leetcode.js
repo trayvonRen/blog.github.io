@@ -77,9 +77,13 @@ module.exports = [
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 2, // 可选的, 默认值是 1
     children: [
-      ['/leetcode/offer/1.md', '1. 二维数组中的查找'],
-      ['/leetcode/offer/58-1.md', '58 - I. 翻转单词顺序'],
-      ['/leetcode/offer/24.md', '24. 反转链表'],
+      // ['/leetcode/offer/1.md', '1. 二维数组中的查找'],
+      ['/leetcode/offer/3.md', '03. 数组中重复的数字'],
+      ['/leetcode/offer/4.md', '04. 二维数组中的查找'],
+      ['/leetcode/offer/5.md', '05. 替换空格'],
+
+      // ['/leetcode/offer/58-1.md', '58 - I. 翻转单词顺序'],
+      // ['/leetcode/offer/24.md', '24. 反转链表'],
     ],
   },
   {

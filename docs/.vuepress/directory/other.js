@@ -10,6 +10,7 @@ module.exports = [
       ['/other/browser/reflow.md', '回流/重绘'],
       ['/other/browser/requestidlecallback.md', 'requestAnimationFrame / requestIdleCallback'],
       ['/other/browser/cache.md', '浏览器缓存'],
+      ['/other/browser/storage.md', 'Web Storage'],
       ['/other/browser/priority.md', '浏览器资源加载优先级'],
     ],
   },

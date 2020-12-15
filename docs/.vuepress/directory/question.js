@@ -19,6 +19,20 @@ module.exports = [
       ['/question/JavaScript/emmit.md', '发布订阅模式-手写事件触发器'],
     ],
   },
+  {
+    title: 'Webpack', // 必要的
+    path: '/question/webpack/', // 可选的, 应该是一个绝对路径
+    collapsable: true, // 可选的, 默认值是 true,
+    sidebarDepth: 2, // 可选的, 默认值是 1
+    children: [],
+  },
+  {
+    title: '计算机网络/浏览器', // 必要的
+    path: '/question/network/', // 可选的, 应该是一个绝对路径
+    collapsable: true, // 可选的, 默认值是 true,
+    sidebarDepth: 2, // 可选的, 默认值是 1
+    children: [],
+  },
   // {
   //   title: 'React', // 必要的
   //   path: '/question/REACT/', // 可选的, 应该是一个绝对路径

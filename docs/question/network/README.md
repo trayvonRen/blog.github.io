@@ -1,7 +1,11 @@
-## TCP
+## TCP 三次握手，四次挥手
 
-#### <a  target="_Blank" href="/network/network/tcp.html">TCP 链接的建立和释放</a>
+#### <a  target="_Blank" href="/other/network/tcp.html">TCP 链接的建立和释放</a>
 
-## HTTP
+### 三次握手会受到什么攻击
 
-#### <a  target="_Blank" href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP">HTTP 不同版本的发展</a>
+syn flood
+
+## 如何给 localstorage 设置过期时间
+
+存数据的时候加上 timestamp，读取的时候检查是否过期
