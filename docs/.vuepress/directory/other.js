@@ -69,6 +69,7 @@ module.exports = [
       ['/other/http/history.md', 'HTTP 发展历史'],
       ['/other/http/connection.md', 'HTTP 1.x 链接管理'],
       ['/other/http/http2.md', 'HTTP 2 更多新特新'],
+      ['/other/http/http3.md', 'HTTP 3'],
       ['/other/http/cryptography.md', 'HTTPS 加密原理'],
       ['/other/http/tls.md', 'HTTPS 加密过程'],
       ['/other/http/cross.md', '跨域'],
