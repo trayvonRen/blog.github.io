@@ -1,5 +1,12 @@
 module.exports = [
   {
+    title: 'React 核心概念', // 必要的
+    path: '/react/base/', // 可选的, 应该是一个绝对路径
+    collapsable: true, // 可选的, 默认值是 true,
+    sidebarDepth: 1, // 可选的, 默认值是 1
+    children: [['/react/base/core.md', 'React 核心概念']],
+  },
+  {
     title: 'React 原理解析', // 必要的
     path: '/react/code/', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
