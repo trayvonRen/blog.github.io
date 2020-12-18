@@ -65,6 +65,7 @@ module.exports = [
       ['/other/http/url.md', 'URL / URI'],
       ['/other/http/code.md', 'HTTP 状态码'],
       ['/other/http/message.md', 'HTTP 报文'],
+      ['/other/http/method.md', 'HTTP 请求方法'],
       ['/other/http/cookie.md', 'HTTP cookie'],
       ['/other/http/history.md', 'HTTP 发展历史'],
       ['/other/http/connection.md', 'HTTP 1.x 链接管理'],
