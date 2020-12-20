@@ -7,6 +7,21 @@ module.exports = [
     children: [['/react/base/core.md', 'React 核心概念']],
   },
   {
+    title: 'Hook', // 必要的
+    path: '/react/hook/', // 可选的, 应该是一个绝对路径
+    collapsable: true, // 可选的, 默认值是 true,
+    sidebarDepth: 2, // 可选的, 默认值是 1
+    children: [
+      ['/react/hook/stateHook.md', 'useState'],
+      ['/react/hook/effectHook.md', 'useEffect'],
+      ['/react/hook/contextHook.md', 'useContext'],
+      ['/react/hook/useCallback.md', 'useCallback'],
+      ['/react/hook/useMemo.md', 'useMemo'],
+      ['/react/hook/useRef.md', 'useRef'],
+      ['/react/hook/customHook.md', '自定义 Hook'],
+    ],
+  },
+  {
     title: 'React 原理解析', // 必要的
     path: '/react/code/', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
@@ -14,28 +29,14 @@ module.exports = [
     children: [
       ['/react/code/concept.md', 'React 设计理念/架构'],
       ['/react/code/fiber.md', 'React Fiber'],
+      ['/react/code/update.md', 'React 状态更新'],
       ['/react/code/render.md', 'Reconciler render 阶段'],
       ['/react/code/diff.md', 'Reconciler Diff 算法'],
       ['/react/code/commit.md', 'Renderer commit 阶段'],
       ['/react/code/timeslice.md', 'Scheduler —— 时间切片 Time Slicing'],
     ],
   },
-  // {
-  //   title: 'Hook', // 必要的
-  //   path: '/react/hook/', // 可选的, 应该是一个绝对路径
-  //   collapsable: true, // 可选的, 默认值是 true,
-  //   sidebarDepth: 2, // 可选的, 默认值是 1
-  //   children: [
-  //     ['/react/hook/hookRules.md', 'hook 使用规则'],
-  //     ['/react/hook/stateHook.md', 'useState'],
-  //     ['/react/hook/effectHook.md', 'useEffect'],
-  //     ['/react/hook/contextHook.md', 'useContext'],
-  //     ['/react/hook/useCallback.md', 'useCallback'],
-  //     ['/react/hook/useMemo.md', 'useMemo'],
-  //     ['/react/hook/useRef.md', 'useRef'],
-  //     ['/react/hook/customHook.md', '自定义 Hook'],
-  //   ],
-  // },
+
   // {
   //   title: 'react 进阶', // 必要的
   //   path: '/react/improve/', // 可选的, 应该是一个绝对路径

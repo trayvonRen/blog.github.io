@@ -51,3 +51,5 @@ useEffect(() => {
   }
 }, [props.source])
 ```
+
+**如果传递空数组，effect 则只会在挂载后执行一次，如同 componentDidMount**

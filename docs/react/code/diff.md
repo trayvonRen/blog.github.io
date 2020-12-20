@@ -431,7 +431,7 @@ oldIndex 2 < lastPlacedIndex 3
 
 ## 总结
 
-- 对于单一节点的 diff，react 会先比对 key，在比对 type 选择是否复用
+- 对于单一节点的 diff，react 会先比对 key，再比对 type 选择是否复用
 - 对于多节点的 diff，react 会进行两次遍历
 - 开发时我尽量保持 key 的稳定性
 - 我们要尽量减少将节点从后面移动到前面的操作

@@ -7,6 +7,13 @@ module.exports = [
     children: [['/question/gluten/zaoniao.md', '腾讯 PCG 早鸟计划']],
   },
   {
+    title: 'HTML / CSS 基础', // 必要的
+    path: '/question/css/', // 可选的, 应该是一个绝对路径
+    collapsable: true, // 可选的, 默认值是 true,
+    sidebarDepth: 2, // 可选的, 默认值是 1
+    children: [],
+  },
+  {
     title: 'JavaScript', // 必要的
     path: '/question/JavaScript/', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
@@ -19,6 +26,9 @@ module.exports = [
       ['/question/JavaScript/emmit.md', '发布订阅模式-手写事件触发器'],
       ['/question/JavaScript/writecall.md', '手写 call/apply'],
       ['/question/JavaScript/bind.md', '手写 bind'],
+      ['/question/JavaScript/new.md', '手写 new'],
+      ['/question/JavaScript/inhert.md', '手写 继承'],
+      ['/question/JavaScript/instanceof.md', '手写 instanceof'],
     ],
   },
   {

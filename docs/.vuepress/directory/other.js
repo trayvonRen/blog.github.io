@@ -104,6 +104,7 @@ module.exports = [
       ['/other/design/closed.md', '设计原则之开放-封闭原则'],
       ['/other/design/factory.md', '设计模式之工厂模式'],
       ['/other/design/observer.md', '设计模式之观察者模式/发布-订阅模式'],
+      ['/other/design/singleton.md', '设计模式之单例模式'],
     ],
   },
 
