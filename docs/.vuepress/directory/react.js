@@ -47,22 +47,22 @@ module.exports = [
   //     ['/react/improve/optimization1.md', '性能优化：组件更新'],
   //   ],
   // },
-  // {
-  //   title: 'redux', // 必要的
-  //   path: '/react/redux/', // 可选的, 应该是一个绝对路径
-  //   collapsable: true, // 可选的, 默认值是 true,
-  //   sidebarDepth: 2, // 可选的, 默认值是 1
-  //   children: [
-  //     ['/react/redux/flow.md', '工作流程'],
-  //     ['/react/redux/action.md', 'Action'],
-  //     ['/react/redux/reducer.md', 'Reducer'],
-  //     ['/react/redux/store.md', 'Store'],
-  //     ['/react/redux/react-redux.md', 'react-redux'],
-  //     ['/react/redux/middleware.md', '中间件'],
-  //     ['/react/redux/redux-thunk.md', 'redux-thunk'],
-  //     ['/react/redux/redux-saga.md', 'redux-saga'],
-  //   ],
-  // },
+  {
+    title: 'redux', // 必要的
+    path: '/react/redux/', // 可选的, 应该是一个绝对路径
+    collapsable: true, // 可选的, 默认值是 true,
+    sidebarDepth: 2, // 可选的, 默认值是 1
+    children: [
+      ['/react/redux/flow.md', '工作流程'],
+      ['/react/redux/action.md', 'Action'],
+      ['/react/redux/reducer.md', 'Reducer'],
+      ['/react/redux/store.md', 'Store'],
+      ['/react/redux/react-redux.md', 'react-redux'],
+      ['/react/redux/middleware.md', '中间件'],
+      ['/react/redux/redux-thunk.md', 'redux-thunk'],
+      ['/react/redux/redux-saga.md', 'redux-saga'],
+    ],
+  },
   // {
   //   title: 'react-router', // 必要的
   //   path: '/react/router/', // 可选的, 应该是一个绝对路径

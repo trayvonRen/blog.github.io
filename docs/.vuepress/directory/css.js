@@ -5,12 +5,17 @@ module.exports = [
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 2, // 可选的, 默认值是 1
     children: [
-      // ['/css/base/inheritance.md', '基本概念'],
-      // ['/css/base/select.md', '选择器'],
+      ['/css/base/inheritance.md', '基本概念'],
+      ['/css/base/select.md', '选择器'],
       ['/css/base/box.md', '盒模型'],
       ['/css/base/containing.md', '包含块'],
-      // ['/css/base/position.md', '定位'],
-      // ['/css/base/length.md', 'css 长度单位'],
+      ['/css/base/flow.md', '布局流'],
+      ['/css/base/BFC.md', 'BFC'],
+
+      ['/css/base/margincollapsing.md', '外边距折叠'],
+
+      ['/css/base/position.md', '定位'],
+      ['/css/base/length.md', 'css 长度单位'],
     ],
   },
   // {

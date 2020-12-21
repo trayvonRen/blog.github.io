@@ -18,6 +18,8 @@ export default class ERPWebSocket {
     if (!this.instance || this.instance.param !== param) {
       this.instance = new this(param)
     }
+
+    return this.instance
   }
 }
 ```
