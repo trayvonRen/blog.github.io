@@ -91,6 +91,7 @@ module.exports = [
       ['/other/security/ddos.md', 'DDOS 攻击'],
       ['/other/security/clickjacking.md', '点击劫持'],
       ['/other/security/sql.md', 'SQL 注入攻击'],
+      ['/other/security/hijack.md', 'DNS / HTTP 劫持'],
     ],
   },
   {
