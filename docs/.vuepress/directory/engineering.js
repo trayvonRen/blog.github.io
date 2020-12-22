@@ -43,4 +43,22 @@ module.exports = [
       ['/engineering/test/tdd.md', 'TDD'],
     ],
   },
+  {
+    title: 'Nginx', // 必要的
+    path: '/engineering/nginx/', // 可选的, 应该是一个绝对路径
+    collapsable: true, // 可选的, 默认值是 true,
+    sidebarDepth: 2, // 可选的, 默认值是 1
+    children: [
+      ['/engineering/nginx/proxy.md', '反向代理 / 正向代理'],
+      ['/engineering/nginx/nginx.md', 'Nginx 简单配置'],
+      ['/engineering/nginx/cors.md', 'Nginx 配置反向代理'],
+    ],
+  },
+  // {
+  //   title: '部署', // 必要的
+  //   path: '/engineering/deploy/', // 可选的, 应该是一个绝对路径
+  //   collapsable: true, // 可选的, 默认值是 true,
+  //   sidebarDepth: 2, // 可选的, 默认值是 1
+  //   children: [['/engineering/deploy/nginx.md', 'Nginx']],
+  // },
 ]

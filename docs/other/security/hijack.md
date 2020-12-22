@@ -34,18 +34,15 @@
 
 检查到网页在 iframe 中则自动重新加载一次
 
-```js
-  <script type="text/javascript">
-        try
-        {
-            if (self != top) {
-                //alert("广告跳转");
-                top.location=self.location;
-            }
-        }
-        catch (e) {
-        }
-    </script>
+```html
+<script type="text/javascript">
+  try {
+    if (self != top) {
+      //alert("广告跳转");
+      top.location = self.location
+    }
+  } catch (e) {}
+</script>
 ```
 
 - 针对注入 dom 节点的情况
