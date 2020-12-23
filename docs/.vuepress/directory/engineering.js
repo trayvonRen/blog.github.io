@@ -4,7 +4,12 @@ module.exports = [
     path: '/engineering/git/', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 2, // 可选的, 默认值是 1
-    children: [],
+    children: [
+      ['/engineering/git/base.md', 'Git 基础操作'],
+      ['/engineering/git/core.md', 'Git 核心概念'],
+      ['/engineering/git/commitGuide.md', 'commit 提交规范'],
+      ['/engineering/git/ignore.md', 'gitignore'],
+    ],
   },
   {
     title: 'Webpack', // 必要的
