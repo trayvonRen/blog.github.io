@@ -20,20 +20,26 @@ git config --global --list
 
 ## 基础命令
 
-### git status
-
 ### git --version
 
 查看 git 版本
 
+### git status
+
+查看当前分支文件修改状态
+
 ### git init
 
-创建一个 git 仓库
+初始化一个 git 仓库
 
 ### git log
 
 查看提交改动
+
+```js
 git log --auther='xxx'
+```
+
 查看某个人的提交改动
 
 ### git rm
@@ -52,7 +58,7 @@ git mv 改动之前的文件名 改动之后的文件名
 
 ### 在还没有 add 之前，还原工作区的内容
 
-还原到最后一次提交的状态
+某个文件还原到最后一次 commit 的状态
 
 ```
 git checkout -- demo.html
@@ -94,4 +100,23 @@ git reset --hard 64b5e72
 git checkout 02180162850eea88431edb2f650cced7e5f187b0 -- demo1.html
 ```
 
+## git 其他操作
+
 ### git tag
+
+将下次 commit 添加 tag，一般是版本信息
+
+### git branch xxxx
+
+创建 xx 分支
+
+### git checkout xxx
+
+切换到 xxx 分支
+:::warning
+在切换分支的时候，要把当前分支的工作区和暂存区清空
+:::
+
+### git merge xxx
+
+把 xxx 分支合并到当前分支上

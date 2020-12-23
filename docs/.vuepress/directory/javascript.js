@@ -17,11 +17,9 @@ module.exports = [
       ['/javascript/base/proto.md', '原型/原型链'],
       ['/javascript/base/inhert.md', '继承'],
       ['/javascript/base/object.md', '深入理解 JavaScript 对象'],
-
       // ['/javascript/base/function.md', '深入理解 JavaScript 函数'],
       // ['/javascript/base/dataS.md', 'JavaScript 数据结构'],
       // ['/javascript/base/data_structures.md', 'JavaScript 数据类型'],
-      // ['/javascript/base/data_type.md', 'JavaScript 类型检测'],
     ],
   },
   {

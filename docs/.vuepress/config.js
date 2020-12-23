@@ -94,7 +94,7 @@ module.exports = {
   activeHeaderLinks: true, // 默认值：true 滚动时通过 hash 高亮侧边栏标题
 
   // Git 仓库和编辑链接
-  repo: 'https://github.com/woyasuohen6/algorithm', // 你的仓库
+  // repo: 'https://github.com/woyasuohen6/algorithm', // 你的仓库
   repoLabel: 'Github', // 导航栏上的文本
 
   editLinks: true,

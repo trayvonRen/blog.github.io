@@ -6,7 +6,6 @@ module.exports = [
     sidebarDepth: 2, // 可选的, 默认值是 1
     children: [
       ['/engineering/git/base.md', 'Git 基础操作'],
-      ['/engineering/git/core.md', 'Git 核心概念'],
       ['/engineering/git/commitGuide.md', 'commit 提交规范'],
       ['/engineering/git/ignore.md', 'gitignore'],
     ],
