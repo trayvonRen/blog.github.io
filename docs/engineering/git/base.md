@@ -100,7 +100,15 @@ git reset --hard 64b5e72
 git checkout 02180162850eea88431edb2f650cced7e5f187b0 -- demo1.html
 ```
 
-## git 其他操作
+## git 核心操作操作
+
+### git add
+
+将工作区的文件提交到暂存区
+
+### git commit
+
+将暂存区的文件提交到代码仓库
 
 ### git tag
 
@@ -116,6 +124,10 @@ git checkout 02180162850eea88431edb2f650cced7e5f187b0 -- demo1.html
 :::warning
 在切换分支的时候，要把当前分支的工作区和暂存区清空
 :::
+
+### git push origin branch
+
+提交某个分支到 origin
 
 ### git merge xxx
 
