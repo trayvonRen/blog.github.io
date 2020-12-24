@@ -6,7 +6,7 @@ module.exports = [
     sidebarDepth: 2, // 可选的, 默认值是 1
     children: [
       ['/javascript/base/datatype.md', '数据类型/类型检测'],
-      ['/javascript/base/Iteration.md', 'JavaScript 遍历'],
+      ['/javascript/base/iteration.md', 'JavaScript 遍历'],
       ['/javascript/base/comparisons.md', 'JavaScript 比较'],
       ['/javascript/base/scope.md', '词法作用域'],
       ['/javascript/base/this.md', 'this 指向'],

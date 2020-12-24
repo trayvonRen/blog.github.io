@@ -54,6 +54,10 @@ git log --auther='xxx'
 git mv 改动之前的文件名 改动之后的文件名
 ```
 
+### git log --graph --pretty=oneline --abbrev-commit
+
+查看分支的详细信息
+
 ## 误操作还原
 
 ### 在还没有 add 之前，还原工作区的内容
@@ -132,3 +136,20 @@ git checkout 02180162850eea88431edb2f650cced7e5f187b0 -- demo1.html
 ### git merge xxx
 
 把 xxx 分支合并到当前分支上
+
+## 高级操作
+
+### git stash
+
+当你临时有急事需要切换到其他分支修改代码时，需要把当前分支代码 commit ，但你又不想 commit 当前分支，就可以使用 git stash 把当前分支工作区内容先保存下来。
+
+```vi
+$ git stash
+Saved working directory and index state WIP on dev: f52c633 add merge
+```
+
+然后可以使用 git stash pop 来恢复工作区内容
+
+```
+git stash pop
+```

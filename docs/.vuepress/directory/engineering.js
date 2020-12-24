@@ -7,6 +7,7 @@ module.exports = [
     children: [
       ['/engineering/git/base.md', 'Git 基础操作'],
       ['/engineering/git/conflict.md', 'Git 解决冲突'],
+      ['/engineering/git/collaboration.md', '多人协作'],
       ['/engineering/git/commitGuide.md', 'commit 提交规范'],
       ['/engineering/git/ignore.md', 'gitignore'],
     ],

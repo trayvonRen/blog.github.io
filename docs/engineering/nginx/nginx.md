@@ -52,8 +52,8 @@ server {
 
     # 配置 https 证书
     ssl on;
-    ssl_certificate ../4698566_trayvonren.top.pem;
-    ssl_certificate_key ../4698566_trayvonren.top.key;
+    ssl_certificate ../4968874_www.trayvonren.top.pem;
+    ssl_certificate_key ../4968874_www.trayvonren.top.key;
     ssl_session_timeout 5m;
     ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
     ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;
@@ -67,22 +67,38 @@ server {
 
 }
 
-# 把 80 端口的 http 请求转发到 https
-server {
-  listen 80;
-  server_name www.trayvonren.top;
-  rewrite ^(.*)$ https://$host$1 permanent;
-}
 
 # 简历服务的配置
 server {
-    listen    80;
-    server_name resume.trayvonren.top;
+    # 使用  https 协议，开启 http2
+    listen  443 ssl http2;
+    server_name  resume.trayvonren.top;
 
     location / {
       root   /web/resume;
       index  index.html index.htm;
     }
+
+    # 配置 https 证书
+    ssl on;
+    ssl_certificate ../4968698_resume.trayvonren.top.pem;
+    ssl_certificate_key ../4968698_resume.trayvonren.top.key;
+    ssl_session_timeout 5m;
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+    ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;
+    ssl_prefer_server_ciphers on;
+
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+}
+
+# 把 80 端口的 http 请求重定向到 https
+server {
+  listen 80;
+  server_name www.trayvonren.top resume.trayvonren.top;
+  rewrite ^(.*)$ https://$host$1 permanent;
 }
 ```
 
