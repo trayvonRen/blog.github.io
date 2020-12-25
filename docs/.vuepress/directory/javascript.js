@@ -47,12 +47,12 @@ module.exports = [
     sidebarDepth: 2, // 可选的, 默认值是 1
     children: [
       ['/javascript/es6/Class.md', 'Class'],
+      ['/javascript/es6/iterator.md', '迭代器'],
+      ['/javascript/es6/generator.md', '生成器'],
 
       // ['/javascript/es6/as.md', '异步编程'],
       // ['/javascript/es6/promise.md', 'promise'],
       // ['/javascript/es6/promiseA.md', 'promise 实现'],
-
-      // ['/javascript/es6/generator.md', 'generator'],
     ],
   },
   {
