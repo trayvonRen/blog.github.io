@@ -45,7 +45,7 @@ then 方法可以接受两个回调函数作为参数。第一个回调函数是
 
 ## API
 
-#### Promise.prototype.then()
+### Promise.prototype.then()
 
 Promise 实例具有 then 方法，也就是说，then 方法是定义在原型对象 Promise.prototype 上的。它的作用是为 Promise 实例添加状态改变时的回调函数。前面说过，then 方法的第一个参数是 resolved 状态的回调函数，第二个参数（可选）是 rejected 状态的回调函数。
 
@@ -61,13 +61,21 @@ getJSON('/posts.json')
   })
 ```
 
-## Promise.prototype.catch()
+### Promise.resolve()
+
+有时需要将现有对象转为 Promise 对象，Promise.resolve()方法就起到这个作用。
+
+```js
+const jsPromise = Promise.resolve($.ajax('/whatever.json'))
+```
+
+### Promise.prototype.catch()
 
 Promise.prototype.catch 方法是.then(null, rejection)或.then(undefined, rejection)的别名，用于指定发生错误时的回调函数。
 
 Promise 对象的错误具有“冒泡”性质，会一直向后传递，直到被捕获为止。也就是说，错误总是会被下一个 catch 语句捕获。
 
-## Promise.prototype.finally()
+### Promise.prototype.finally()
 
 finally 方法用于指定不管 Promise 对象最后状态如何，都会执行的操作。该方法是 ES2018 引入标准的。
 
@@ -78,10 +86,95 @@ promise
 .finally(() => {···});
 ```
 
-## Promise.resolve()
+### Promise.all
 
-有时需要将现有对象转为 Promise 对象，Promise.resolve()方法就起到这个作用。
+接收一个可迭代对象，返回一个新 Promise。
+
+当对象里的所有 Promise 都 resolve 时，返回的 Promise 也会 resolve。
 
 ```js
-const jsPromise = Promise.resolve($.ajax('/whatever.json'))
+let p1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('p1')
+  }, 500)
+})
+
+let p2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('p2')
+  }, 1000)
+})
+
+let p3 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('p3')
+  }, 1500)
+})
+
+let P = Promise.all([p1, p2, p3]).then(res => {
+  console.log(res)
+  console.log(P)
+})
+```
+
+当有一个 reject 时，返回的 Promise 会立刻 reject
+
+```js
+let p1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('p1')
+  }, 500)
+})
+
+let p2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    reject('p2')
+  }, 1000)
+})
+
+let p3 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('p3')
+  }, 1500)
+})
+
+let P = Promise.all([p1, p2, p3])
+  .then(res => {
+    console.log(res)
+  })
+  .catch(res => {
+    console.log(res)
+  })
+```
+
+### Promise.race
+
+Promise 接受一个可迭代对象，里面的 Promise 是竞争关系，谁先 resolve 或者 reject 立刻会被当做返回值返回到外部。其他会 settled 的 Promise 会继续执行但不会再影响结果。
+
+```js
+let p1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('p1')
+  }, 500)
+})
+
+let p2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    reject('p2')
+  }, 1000)
+})
+let p3 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    console.log('p3')
+    resolve('p3')
+  }, 1500)
+})
+
+let P = Promise.race([p1, p2, p3])
+  .then(res => {
+    console.log(res)
+  })
+  .catch(res => {
+    console.log(res)
+  })
 ```

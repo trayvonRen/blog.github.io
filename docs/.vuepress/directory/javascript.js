@@ -50,9 +50,9 @@ module.exports = [
       ['/javascript/es6/iterator.md', '迭代器'],
       ['/javascript/es6/generator.md', '生成器'],
 
-      // ['/javascript/es6/as.md', '异步编程'],
-      // ['/javascript/es6/promise.md', 'promise'],
-      // ['/javascript/es6/promiseA.md', 'promise 实现'],
+      ['/javascript/es6/as.md', '异步编程'],
+      ['/javascript/es6/promise.md', 'promise'],
+      ['/javascript/es6/promiseA.md', 'promise 实现'],
     ],
   },
   {
