@@ -29,6 +29,8 @@ module.exports = [
       ['/question/JavaScript/new.md', '手写 new'],
       ['/question/JavaScript/inhert.md', '手写 继承'],
       ['/question/JavaScript/instanceof.md', '手写 instanceof'],
+      ['/question/JavaScript/url.md', '手写 解析 url'],
+
       ['/question/JavaScript/promise.md', 'promise 专场'],
     ],
   },
