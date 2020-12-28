@@ -28,7 +28,6 @@ module.exports = [
       ['/other/optimization/resources.md', '资源优化'],
       ['/other/optimization/transport.md', '传输优化'],
       ['/other/optimization/lazy.md', '异步加载/预加载'],
-
       // ['/other/webpack/mode.md', 'mode'],
       // ['/other/webpack/entry.md', 'entry & output'],
       // ['/other/webpack/loader.md', 'loader'],
@@ -53,6 +52,7 @@ module.exports = [
       ['/other/network/flowControl.md', 'TCP 流量控制'],
       ['/other/network/congestion.md', 'TCP 拥塞控制'],
       ['/other/network/dns.md', 'DNS'],
+      ['/other/network/cdn.md', 'CDN'],
     ],
   },
 

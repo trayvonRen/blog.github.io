@@ -1,4 +1,311 @@
+## 实现 promise
+
+祈祷面试官不要问这个问题
+
+根据 Promise A+ 实现 promise
+
+```js
+const PENDING = 'pending'
+const FULFILLED = 'fulfilled'
+const REJECTED = 'rejected'
+
+function Promise(executor) {
+  let self = this
+  this.status = PENDING
+  self.onFulfilled = []
+  self.onRejected = []
+  function resolve(value) {
+    if (self.status === PENDING) {
+      self.status = FULFILLED
+      self.value = value
+      self.onFulfilled.fpromiseorEach(fn => fn())
+    }
+  }
+  function reject(reason) {
+    if (self.status === PENDING) {
+      self.status = REJECTED
+      self.reason = reason
+      self.onRejected.forEach(fn => fn())
+    }
+  }
+
+  try {
+    executor(resolve, reject)
+  } catch (e) {
+    reject(e)
+  }
+}
+
+Promise.prototype.then = function(onFulfilled, onRejected) {
+  onFulfilled = typeof onFulfilled === 'function' ? onFulfilled : value => value
+  onRejected =
+    typeof onRejected === 'function'
+      ? onRejected
+      : reason => {
+          throw reason
+        }
+  let self = this
+  let promise2 = new Promise((reslove, reject) => {
+    if (self.status === FULFILLED) {
+      queueMicrotask(() => {
+        try {
+          let x = onFulfilled(self.value)
+          resolvePromise(promise2, x, reslove, reject)
+        } catch (e) {
+          reject(e)
+        }
+      })
+    } else if (self.status === REJECTED) {
+      queueMicrotask(() => {
+        try {
+          let x = onRejected(self.reason)
+          resolvePromise(promise2, x, reslove, reject)
+        } catch (e) {
+          reject(e)
+        }
+      })
+    } else if (self.status === PENDING) {
+      self.onFulfilled.push(() => {
+        queueMicrotask(() => {
+          try {
+            let x = onFulfilled(self.value)
+            resolvePromise(promise2, x, reslove, reject)
+          } catch (e) {
+            reject(e)
+          }
+        })
+      })
+
+      self.onRejected.push(() => {
+        queueMicrotask(() => {
+          try {
+            let x = onRejected(self.reason)
+            resolvePromise(promise2, x, reslove, reject)
+          } catch (e) {
+            reject(e)
+          }
+        })
+      })
+    }
+  })
+  return promise2
+}
+
+function resolvePromise(promise, x, resolve, reject) {
+  if (promise === x) {
+    reject(new TypeError('Chaining cycle'))
+  }
+  if ((x && typeof x === 'object') || typeof x === 'function') {
+    let used
+    try {
+      let then = x.then
+      if (typeof then === 'function') {
+        then.call(
+          x,
+          y => {
+            if (used) return
+            used = true
+            resolvePromise(promise, y, resolve, reject)
+          },
+          r => {
+            if (used) return
+            used = true
+            reject(r)
+          }
+        )
+      } else {
+        if (used) return
+        used = true
+        resolve(x)
+      }
+    } catch (e) {
+      if (used) return
+      used = true
+      reject(e)
+    }
+  } else {
+    resolve(x)
+  }
+}
+
+Promise.defer = Promise.deferred = function() {
+  let dfd = {}
+  dfd.promise = new Promise((resolve, reject) => {
+    dfd.resolve = resolve
+    dfd.reject = reject
+  })
+  return dfd
+}
+
+module.exports = Promise
+```
+
+## 实现 promise.all
+
+本质上利用 promise.then 进行模拟，当所有 promise.then 都执行时，即可执行 resolve
+
+```js
+function promiseAll(promisesArr) {
+  return new Promise(function(resolve, reject) {
+    let promiseNum = promisesArr.length
+    let resolvedNum = 0
+    let resolvedValues = new Array(promiseNum)
+
+    for (let i = 0; i < promiseNum; i++) {
+      let p = promisesArr[i]
+
+      // 对非 promise 进行包装
+      if (!(p instanceof Promise)) {
+        p = Promise.resolve(p)
+      }
+
+      p.then(
+        res => {
+          resolvedValues[i] = res
+          if (++resolvedNum === promiseNum) {
+            resolve(resolvedValues)
+          }
+        },
+        err => {
+          reject(err)
+        }
+      )
+    }
+  })
+}
+
+let p1 = promiseAll([1, 12, 32])
+p1.then(res => {
+  console.log(res)
+})
+let p2 = promiseAll([1, Promise.resolve(1), 32])
+p2.then(res => {
+  console.log(res)
+})
+let p3 = promiseAll([
+  1,
+  Promise.resolve(1),
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(232)
+    }, 2000)
+  }),
+])
+p3.then(res => {
+  console.log(res)
+})
+let p4 = promiseAll([
+  1,
+  Promise.resolve(1),
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      reject(232)
+    }, 2000)
+  }),
+])
+
+p4.catch(err => {
+  console.log(err)
+})
+```
+
+## 实现 Promise.race
+
+与 promise.all 实现方法类似
+
+```js
+function promiseRace(promisesArr) {
+  return new Promise(function(resolve, reject) {
+    for (let i = 0; i < promisesArr.length; i++) {
+      let p = promisesArr[i]
+      if (!(p instanceof Promise)) p = Promise.resolve(p)
+      p.then(
+        res => {
+          resolve(res)
+        },
+        err => {
+          reject(err)
+        }
+      )
+    }
+  })
+}
+
+let p1 = promiseRace([1, 12, 32])
+p1.then(res => {
+  console.log(res)
+})
+
+let p3 = promiseRace([
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      reject(3)
+    }, 3000)
+  }),
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      reject(2)
+    }, 2000)
+  }),
+])
+
+p3.then(
+  res => {
+    console.log('resolve', res)
+  },
+  err => {
+    console.log('reject', err)
+  }
+)
+let p4 = promiseRace([
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(3)
+    }, 3000)
+  }),
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(2)
+    }, 2000)
+  }),
+])
+
+p4.then(
+  res => {
+    console.log('resolve', res)
+  },
+  err => {
+    console.log('reject', err)
+  }
+)
+```
+
 ## 如何取消一个 Promise
+
+封装一个 promise 把 reject 方法保存为 cancel 下来，调用 cancel 即可取消
+
+```js
+class cancelabePromise {
+  constructor(executor) {
+    return new Promise((resolve, reject) => {
+      this.cancel = () => {
+        reject('promise 已被取消！')
+      }
+      return executor(resolve, reject)
+    })
+  }
+}
+
+let p = new cancelabePromise(function(resolve, reject) {
+  setTimeout(() => {
+    resolve()
+  }, 5000)
+})
+
+setTimeout(() => {
+  p.cancel()
+}, 3000)
+```
 
 ## 如何实时获取 Promise 的进度
 
@@ -89,7 +396,9 @@ p.then(res => {
 })
 ```
 
-## 有一个 Api 列表如何依次请求他们(必须等上次请求返回结果之后再请求下一个)
+## 有一个 Api 列表如何依次请求他们
+
+> 必须等上次请求返回结果之后再请求下一个
 
 ### async
 
