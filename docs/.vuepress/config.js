@@ -21,7 +21,7 @@ module.exports = {
     },
   },
   themeConfig: {
-    // lastUpdated: '最后编辑时间', // string | boolean
+    lastUpdated: '最后编辑时间', // string | boolean
     smoothScroll: true,
 
     // Git 仓库和编辑链接
