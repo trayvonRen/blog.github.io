@@ -2,8 +2,11 @@
 home: true
 heroImage: /icon/hello.png
 heroText: 每天进步亿点点
-tagline: trayvon
+tagline: trayvonRen
 actionText: START
-actionLink: algorithm/
-footer: 皖ICP备2020018249号
+actionLink: javascript/
 ---
+
+<div style="margin-top: 20vh; display: flex; justify-content: center; align-items: center;">
+ <a target="_blank" style="color: black!important; " href="https://beian.miit.gov.cn" >皖 ICP 备 2020018249 号-1</a>
+</div>
