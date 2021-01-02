@@ -87,6 +87,8 @@ module.exports = [
       ['/leetcode/offer/9.md', '09. 两个栈实现队列'],
       ['/leetcode/offer/10-1.md', '10-I. 斐波那契数列'],
       ['/leetcode/offer/10-2.md', '10-II. 青蛙跳台阶问题'],
+      ['/leetcode/offer/11.md', '11. 旋转数组的最小数字'],
+      ['/leetcode/offer/12.md', '12. 矩阵中的路径'],
 
       // ['/leetcode/offer/58-1.md', '58 - I. 翻转单词顺序'],
       // ['/leetcode/offer/24.md', '24. 反转链表'],
