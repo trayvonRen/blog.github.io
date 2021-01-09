@@ -1,7 +1,7 @@
 module.exports = [
   {
     title: '浏览器', // 必要的
-    path: '/other/browser/', // 可选的, 应该是一个绝对路径
+    path: '/other/browser/browserframework', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 1, // 可选的, 默认值是 1
     children: [
@@ -58,13 +58,14 @@ module.exports = [
 
   {
     title: 'HTTP', // 必要的
-    path: '/other/http/', // 可选的, 应该是一个绝对路径
+    path: '/other/http/url', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 1, // 可选的, 默认值是 1
     children: [
       ['/other/http/url.md', 'URL / URI'],
-      ['/other/http/code.md', 'HTTP 状态码'],
       ['/other/http/message.md', 'HTTP 报文'],
+      ['/other/http/code.md', 'HTTP 状态码'],
+      ['/other/http/301.md', 'HTTP 重定向'],
       ['/other/http/method.md', 'HTTP 请求方法'],
       ['/other/http/cookie.md', 'HTTP cookie'],
       ['/other/http/history.md', 'HTTP 发展历史'],
@@ -73,6 +74,7 @@ module.exports = [
       ['/other/http/http3.md', 'HTTP 3'],
       ['/other/http/cryptography.md', 'HTTPS 加密原理'],
       ['/other/http/tls.md', 'HTTPS 加密过程'],
+      ['/other/http/hsts.md', 'HSTS'],
       ['/other/http/cross.md', '跨域'],
       ['/other/http/cors.md', 'HTTP CORS'],
       ['/other/http/session.md', 'HTTP 会话管理：Session'],
@@ -82,7 +84,7 @@ module.exports = [
   },
   {
     title: 'Web 安全', // 必要的
-    path: '/other/security/', // 可选的, 应该是一个绝对路径
+    path: '/other/security/xss', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 1, // 可选的, 默认值是 1
     children: [
@@ -92,6 +94,7 @@ module.exports = [
       ['/other/security/clickjacking.md', '点击劫持'],
       ['/other/security/sql.md', 'SQL 注入攻击'],
       ['/other/security/hijack.md', 'DNS / HTTP 劫持'],
+      ['/other/security/ssl.md', 'SSL 剥离攻击'],
     ],
   },
   {

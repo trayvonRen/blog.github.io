@@ -4,6 +4,11 @@
 # 确保脚本抛出遇到的错误
 set -e
 
+# push 到 github
+git add .
+git commit -m'add note'
+git push
+
 # 生成静态文件
 npm run docs:build
 
@@ -13,9 +18,6 @@ cd docs/.vuepress/dist
 git init
 git add .
 git commit -m 'deploy'
-
-# 如果发布到 https://<USERNAME>.github.io
-# git push -f origin git@github.com:trayvonRen/woyasuohen6.github.io.git
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 git remote add origin root@123.57.137.244:/web/repo/blog.git

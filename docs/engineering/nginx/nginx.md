@@ -37,6 +37,7 @@ nginx: /usr/sbin/nginx /usr/lib64/nginx /etc/nginx /usr/share/nginx /usr/share/m
 server {
     # 使用  https 协议，开启 http2
     listen  443 ssl http2;
+
     server_name  www.trayvonren.top;
 
     # 日志文件
@@ -59,6 +60,8 @@ server {
     ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;
     ssl_prefer_server_ciphers on;
 
+    # 开启 HSTS 协议
+    add_header Strict-Transport-Security "max-age=63072000; includeSubdomains; preload";
 
     error_page   500 502 503 504  /50x.html;
     location = /50x.html {
@@ -87,6 +90,9 @@ server {
     ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
     ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;
     ssl_prefer_server_ciphers on;
+
+    # 开启 HSTS 协议
+     add_header Strict-Transport-Security "max-age=63072000; includeSubdomains; preload";
 
     error_page   500 502 503 504  /50x.html;
     location = /50x.html {
