@@ -1,7 +1,7 @@
 module.exports = [
   {
     title: '面筋', // 必要的
-    path: '/question/gluten/', // 可选的, 应该是一个绝对路径
+    path: '/question/gluten/zaoniao', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 2, // 可选的, 默认值是 1
     children: [['/question/gluten/zaoniao.md', '腾讯 PCG 早鸟计划']],
@@ -15,22 +15,23 @@ module.exports = [
   },
   {
     title: 'JavaScript', // 必要的
-    path: '/question/JavaScript/', // 可选的, 应该是一个绝对路径
+    path: '/question/JavaScript/others', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 2, // 可选的, 默认值是 1
     children: [
+      ['/question/JavaScript/others.md', '小问题汇总'],
       ['/question/JavaScript/filter.md', '实现 Array.prototype.filter()'],
-      ['/question/JavaScript/debounce.md', '防抖/节流'],
       ['/question/JavaScript/shuffle.md', '洗牌算法'],
       ['/question/JavaScript/float0.1.md', '0.1 + 0.2 == 0.3'],
       ['/question/JavaScript/emmit.md', '发布订阅模式-手写事件触发器'],
+      ['/question/JavaScript/debounce.md', '手写 防抖/节流'],
       ['/question/JavaScript/writecall.md', '手写 call/apply'],
       ['/question/JavaScript/bind.md', '手写 bind'],
       ['/question/JavaScript/new.md', '手写 new'],
       ['/question/JavaScript/inhert.md', '手写 继承'],
       ['/question/JavaScript/instanceof.md', '手写 instanceof'],
+      ['/question/JavaScript/array.md', '手写各种数组方法'],
       ['/question/JavaScript/url.md', '手写 解析 url'],
-
       ['/question/JavaScript/promise.md', 'promise 专场'],
     ],
   },

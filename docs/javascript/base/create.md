@@ -14,19 +14,18 @@ var person = {
 
 ### 工厂模式
 
-````js
+```js
 function createPerson(name, age, job) {
   let o = new Object()
   o.name = name
   o.age = age
   o.job = j
-  o.sayName = function () {
+  o.sayName = function() {
     console.log(this.name)
   }
   return o
 }
-      ```
-````
+```
 
 ### 构造函数模式
 

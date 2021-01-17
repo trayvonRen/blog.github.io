@@ -105,8 +105,23 @@ NaN === NaN // false
 
 ## 同值相等
 
-同值相等由 Object.is 方法提供
+同值相等由 Object.is 方法提供  
+除了 0 值和 NaN 基本与 `===` 结果相同
+
+```js
+// Object.is 认为 +0 -0 不是同一个值。
+Object.is(0, -0) // false
+Object.is(0, +0) // true
+Object.is(-0, -0) // true
+// 两个 NaN 是同一个值
+Object.is(NaN, 0 / 0) // true
+```
 
 ## 零值相等
 
 与同值相等类似，不过会认为 +0 与 -0 相等。
+
+## 参考资料
+
+[MDN: 比较操作符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)  
+[MDN: Object.is()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/is)

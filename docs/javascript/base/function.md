@@ -96,7 +96,6 @@ const loop = x => {
 ;(function foo() {
   console.log('Hello Foo')
 })()
-
 ;(function food() {
   console.log('Hello Food')
 })()
@@ -201,3 +200,16 @@ var f = function(name) {
 f('rcw', 12)
 //2
 ```
+
+### arguments.callee
+
+arguments.callee 属性包含当前正在执行的函数。
+
+### arguments.callee.caller
+
+arguments.callee.caller 返回调用该函数的函数
+
+:::warning
+在严格模式下，第 5 版 ECMAScript (ES5) 禁止使用 arguments.callee()。  
+因为 arguments.callee 会导致一些性能问题。
+:::

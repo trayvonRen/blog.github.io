@@ -196,3 +196,7 @@ console.log(Object.getOwnPropertyNames(obj))
   因为不同 JavaScript 引擎优化的关系, 其实性能差距也有一定玄学的成分, 所以实际编码中应该以代码的可读性为标准。
 - 对于对象的遍历, 因该以实际需求为准(要不要遍历原型链? 要不要 unenumerable 属性? 要不要 Symbol 属性?).
   对于一个经常需要遍历的对象, 可以尝试使用 Map 来替换, 因为它实现了 Iterator 接口。
+
+## 参考资料
+
+[MDN: for...in](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...in)
