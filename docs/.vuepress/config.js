@@ -50,10 +50,10 @@ module.exports = {
         text: '前端工程化',
         link: '/engineering/',
       },
-      {
-        text: '后端',
-        link: '/operator/',
-      },
+      // {
+      //   text: '后端',
+      //   link: '/operator/',
+      // },
       {
         text: '数据结构与算法',
         link: '/leetcode/',
@@ -64,7 +64,7 @@ module.exports = {
       },
       {
         text: '面试题',
-        link: '/question/',
+        link: '/question/JavaScript/others',
       },
     ],
 
