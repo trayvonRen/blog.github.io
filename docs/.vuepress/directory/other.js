@@ -106,6 +106,7 @@ module.exports = [
       ['/other/design/coupling.md', '耦合性'],
       ['/other/design/privilege.md', '设计原则之最小权限原则'],
       ['/other/design/closed.md', '设计原则之开放-封闭原则'],
+      ['/other/design/mvc.md', 'MVC/MVVM'],
       ['/other/design/factory.md', '创建模式之工厂模式'],
       ['/other/design/singleton.md', '创建模式之单例模式'],
       ['/other/design/observer.md', '行为模式之观察者模式/发布-订阅模式'],
