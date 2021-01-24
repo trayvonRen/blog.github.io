@@ -16,7 +16,7 @@ module.exports = [
   },
   {
     title: 'Web 性能优化', // 必要的
-    path: '/other/optimization/', // 可选的, 应该是一个绝对路径
+    path: '/other/optimization/rail', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 1, // 可选的, 默认值是 1
     children: [
@@ -99,7 +99,7 @@ module.exports = [
   },
   {
     title: '设计模式', // 必要的
-    path: '/other/design/', // 可选的, 应该是一个绝对路径
+    path: '/other/design/coupling', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 1, // 可选的, 默认值是 1
     children: [

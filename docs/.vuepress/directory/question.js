@@ -1,7 +1,7 @@
 module.exports = [
   {
     title: '面筋', // 必要的
-    path: '/question/gluten/zaoniao', // 可选的, 应该是一个绝对路径
+    path: '/question/gluten/', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 2, // 可选的, 默认值是 1
     children: [['/question/gluten/zaoniao.md', '腾讯 PCG 早鸟计划']],

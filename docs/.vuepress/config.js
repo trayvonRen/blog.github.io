@@ -60,11 +60,11 @@ module.exports = {
       },
       {
         text: '其他',
-        link: '/other/',
+        link: '/other/browser/browserframework',
       },
       {
         text: '面试题',
-        link: '/question/JavaScript/others',
+        link: '/question/',
       },
     ],
 
