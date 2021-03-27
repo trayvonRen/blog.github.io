@@ -1,8 +1,22 @@
 module.exports = [
   {
-    title: 'GIT', // 必要的
-    path: '/engineering/git/', // 可选的, 应该是一个绝对路径
-    collapsable: true, // 可选的, 默认值是 true,
+    title: 'Typescript',
+    path: '/engineering/typescript/typeinference',
+    collapsable: true,
+    sidebarDepth: 2,
+    children: [
+      ['/engineering/typescript/typeinference.md', '类型注解，类型推断，类型断言'],
+      ['/engineering/typescript/basictype.md', '基础类型'],
+      ['/engineering/typescript/objecttype.md', '对象类型'],
+      ['/engineering/typescript/advancetype.md', '高级类型'],
+      ['/engineering/typescript/interface.md', '接口'],
+      ['/engineering/typescript/class.md', '类'],
+    ],
+  },
+  {
+    title: 'GIT',
+    path: '/engineering/git/',
+    collapsable: true,
     sidebarDepth: 2, // 可选的, 默认值是 1
     children: [
       ['/engineering/git/base.md', 'Git 基础操作'],

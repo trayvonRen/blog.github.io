@@ -49,13 +49,13 @@ module.exports = [
     sidebarDepth: 2, // 可选的, 默认值是 1
     children: [],
   },
-  // {
-  //   title: 'React', // 必要的
-  //   path: '/question/REACT/', // 可选的, 应该是一个绝对路径
-  //   collapsable: true, // 可选的, 默认值是 true,
-  //   sidebarDepth: 2, // 可选的, 默认值是 1
-  //   children: [['/question/REACT//this.md', 'React 设计理念/架构']],
-  // },
+  {
+    title: 'React', // 必要的
+    path: '/question/REACT/', // 可选的, 应该是一个绝对路径
+    collapsable: true, // 可选的, 默认值是 true,
+    sidebarDepth: 2, // 可选的, 默认值是 1
+    children: [],
+  },
   // {
   //   title: '剑指 OFFER', // 必要的
   //   path: '/leetcode/offer/', // 可选的, 应该是一个绝对路径

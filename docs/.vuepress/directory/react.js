@@ -37,18 +37,18 @@ module.exports = [
     ],
   },
 
-  // {
-  //   title: 'react 进阶', // 必要的
-  //   path: '/react/improve/', // 可选的, 应该是一个绝对路径
-  //   collapsable: true, // 可选的, 默认值是 true,
-  //   sidebarDepth: 2, // 可选的, 默认值是 1
-  //   children: [
-  //     ['/react/improve/splitting.md', '代码分割'],
-  //     ['/react/improve/optimization1.md', '性能优化：组件更新'],
-  //   ],
-  // },
   {
-    title: 'redux', // 必要的
+    title: 'React 进阶',
+    path: '/react/improve/', // 可选的, 应该是一个绝对路径
+    collapsable: true, // 可选的, 默认值是 true,
+    sidebarDepth: 2, // 可选的, 默认值是 1
+    children: [
+      ['/react/improve/splitting.md', '代码分割'],
+      ['/react/improve/optimization1.md', '性能优化：组件更新'],
+    ],
+  },
+  {
+    title: 'Redux', // 必要的
     path: '/react/redux/', // 可选的, 应该是一个绝对路径
     collapsable: true, // 可选的, 默认值是 true,
     sidebarDepth: 2, // 可选的, 默认值是 1
