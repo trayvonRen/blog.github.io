@@ -141,60 +141,59 @@ Cache-Control: max-age=0
 `nodejs` 使用 `Etag` 控制协商缓存
 
 ```js
-const http = require('http')
-const fs = require('fs')
-const path = require('path')
-const mime = require('mime')
-const etag = require('etag')
+const http = require('http');
+const fs = require('fs');
+const path = require('path');
+const mime = require('mime');
+const etag = require('etag');
 
 http
   .createServer((request, response) => {
     // 解析请求路径
-    var pathname = __dirname + decodeURI(request.url)
+    var pathname = __dirname + decodeURI(request.url);
     // 跳转默认页面
     if (pathname === __dirname + '/') {
-      pathname = __dirname + '/index.html'
+      pathname = __dirname + '/index.html';
     }
 
-    fs.exists(pathname, exists => {
+    fs.exists(pathname, (exists) => {
       // 如果资源存在，返回请求的资源
       if (exists) {
         // 读取请求文件
         fs.readFile(pathname, (err, data) => {
-          if (err) console.error(err.stack)
+          if (err) console.error(err.stack);
 
           // 获取文件当前的 Etag
-          const Etag = etag(data)
-
+          const Etag = etag(data);
           // 如果当前文件 Etag 与请求的 Etag 相同，返回 304 命中协商缓存
           if (Etag === request.headers['if-none-match']) {
-            response.statusCode = 304
+            response.statusCode = 304;
           } else {
             // 如果 Etag 不相同或者第一次请求文件，则返回静态资源并更新 Etag
-            response.setHeader('Cache-Control', 'no-cache')
-            response.setHeader('Etag', Etag)
+            response.setHeader('Cache-Control', 'no-cache');
+            response.setHeader('Etag', Etag);
             response.writeHead(200, {
               'Content-Type': mime.getType(pathname),
-            })
-            response.on('error', err => {
-              console.error(err.stack)
-            })
-            response.write(data)
+            });
+            response.on('error', (err) => {
+              console.error(err.stack);
+            });
+            response.write(data);
           }
-          response.end()
-        })
+          response.end();
+        });
         // 如何资源不存在，返回 404
       } else {
         response.writeHead(404, {
           'Content-Type': 'text/plain;charset=utf-8',
-        })
-        response.end(path.basename(pathname) + '\n文件不存在！')
+        });
+        response.end(path.basename(pathname) + '\n文件不存在！');
       }
-    })
+    });
   })
-  .listen(80)
+  .listen(80);
 
-console.log('server is listening on 80 port!')
+console.log('server is listening on 80 port!');
 ```
 
 ## 总结
