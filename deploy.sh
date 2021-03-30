@@ -19,6 +19,7 @@ git init
 git add .
 git commit -m 'deploy'
 
+
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 git remote add origin root@123.57.137.244:/web/repo/blog.git
 git push -f origin  master
