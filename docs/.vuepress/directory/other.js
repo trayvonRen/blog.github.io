@@ -6,9 +6,15 @@ module.exports = [
     sidebarDepth: 1, // 可选的, 默认值是 1
     children: [
       ['/other/browser/browserframework.md', '现代浏览器架构'],
-      ['/other/browser/open.md', '浏览器的工作原理: 从输入 URL 到页面展示经历过什么'],
+      [
+        '/other/browser/open.md',
+        '浏览器的工作原理: 从输入 URL 到页面展示经历过什么',
+      ],
       ['/other/browser/reflow.md', '回流/重绘'],
-      ['/other/browser/requestidlecallback.md', 'requestAnimationFrame / requestIdleCallback'],
+      [
+        '/other/browser/requestidlecallback.md',
+        'requestAnimationFrame / requestIdleCallback',
+      ],
       ['/other/browser/cache.md', '浏览器缓存'],
       ['/other/browser/storage.md', 'Web Storage'],
       ['/other/browser/priority.md', '浏览器资源加载优先级'],
@@ -23,7 +29,10 @@ module.exports = [
       ['/other/optimization/rail.md', 'RAIL 用户性能评价模型'],
       ['/other/optimization/quota.md', '性能优化的指标'],
       ['/other/optimization/api.md', 'Web 性能检测 API'],
-      ['/other/optimization/Critical_rendering_path.md', '渲染优化理论基础：关键渲染路径'],
+      [
+        '/other/optimization/Critical_rendering_path.md',
+        '渲染优化理论基础：关键渲染路径',
+      ],
       ['/other/optimization/render.md', '渲染优化'],
       ['/other/optimization/resources.md', '资源优化'],
       ['/other/optimization/transport.md', '传输优化'],
@@ -98,6 +107,7 @@ module.exports = [
       ['/other/design/privilege.md', '设计原则之最小权限原则'],
       ['/other/design/closed.md', '设计原则之开放-封闭原则'],
       ['/other/design/mvc.md', 'MVC/MVVM'],
+      ['/other/design/mvcweb.md', 'MVC'],
       ['/other/design/factory.md', '创建模式之工厂模式'],
       ['/other/design/singleton.md', '创建模式之单例模式'],
       ['/other/design/observer.md', '行为模式之观察者模式/发布-订阅模式'],
@@ -142,4 +152,4 @@ module.exports = [
   //   sidebarDepth: 2, // 可选的, 默认值是 1
   //   children: [['/other/vscode/settings.md', '配置文件']],
   // },
-]
+];
