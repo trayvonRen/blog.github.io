@@ -17,16 +17,18 @@
 
 每一次调用 next 方法，都会返回数据结构的当前成员的信息。具体来说，就是返回一个包含 value 和 done 两个属性的对象。其中，value 属性是当前成员的值，done 属性是一个布尔值，表示遍历是否结束。
 
-**可以使用 JavaScript 模拟 Iterator 的实现**
+** 可以使用 JavaScript 模拟 Iterator 的实现 **
 
 ```js
 function makeIterator(array) {
-  var nextIndex = 0
+  var nextIndex = 0;
   return {
     next: function() {
-      return nextIndex < array.length ? { value: array[nextIndex++], done: false } : { done: true }
+      return nextIndex < array.length
+        ? { value: array[nextIndex++], done: false }
+        : { done: true };
     },
-  }
+  };
 }
 ```
 
@@ -97,19 +99,19 @@ for(let item of arr) {
 ### for while 循环
 
 ```js
-let str = 'abcdefg'
-let strL = str.length
+let str = 'abcdefg';
+let strL = str.length;
 for (let i = 0; i < strL; i++) {
-  console.log(str[i])
+  console.log(str[i]);
 }
 ```
 
 ### for .. of
 
 ```js
-let str = 'abcdefg'
+let str = 'abcdefg';
 for (let item of str) {
-  console.log(item)
+  console.log(item);
 }
 ```
 
@@ -125,14 +127,14 @@ for...in 循环会遍历除 Symbol 以外的可枚举属性（**包括它的原�
 ```js
 let obj = Object.create({
   height: 200,
-})
+});
 
-obj.name = 'rcw'
-obj.age = 100
-obj[Symbol('money')] = 100
+obj.name = 'rcw';
+obj.age = 100;
+obj[Symbol('money')] = 100;
 
 for (let item in obj) {
-  console.log(item, obj[item])
+  console.log(item, obj[item]);
 }
 //name rcw
 //age 100
@@ -146,13 +148,13 @@ Object.keys() 方法会返回一个由一个给定对象的自身除 Symbol 以�
 ```js
 let obj = Object.create({
   height: 200,
-})
+});
 
-obj.name = 'rcw'
-obj.age = 100
-obj[Symbol('money')] = 100
+obj.name = 'rcw';
+obj.age = 100;
+obj[Symbol('money')] = 100;
 
-console.log(Object.keys(obj))
+console.log(Object.keys(obj));
 // [ 'name', 'age' ]
 ```
 
@@ -161,13 +163,13 @@ Object.values()方法返回一个给定对象自身除 Symbol 以外的所有可
 ```js
 let obj = Object.create({
   height: 200,
-})
+});
 
-obj.name = 'rcw'
-obj.age = 100
-obj[Symbol('money')] = 100
+obj.name = 'rcw';
+obj.age = 100;
+obj[Symbol('money')] = 100;
 
-console.log(Object.values(obj))
+console.log(Object.values(obj));
 // [ 'rcw', 100 ]
 ```
 
@@ -176,16 +178,16 @@ console.log(Object.values(obj))
 Object.getOwnPropertyNames()方法返回一个由指定对象的所有自身属性的属性名（包括不可枚举属性但不包括 Symbol 值作为名称的属性）组成的数组。
 
 ```js
-let obj = {}
-obj.name = 'rcw'
-obj.age = 100
-obj.__msg = 'no enumerable'
+let obj = {};
+obj.name = 'rcw';
+obj.age = 100;
+obj.__msg = 'no enumerable';
 
 Object.defineProperty(obj, '__msg', {
   enumerable: false,
-})
+});
 
-console.log(Object.getOwnPropertyNames(obj))
+console.log(Object.getOwnPropertyNames(obj));
 //[ 'name', 'age', '__msg' ]
 ```
 

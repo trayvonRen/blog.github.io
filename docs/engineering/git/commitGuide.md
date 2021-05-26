@@ -53,4 +53,4 @@ commit 具体修改内容, 可以分为多行
 
 ## 参考资料
 
-https://juejin.im/post/5afc5242f265da0b7f44bee4
+[优雅的提交你的 Git Commit Message](https://juejin.im/post/5afc5242f265da0b7f44bee4)

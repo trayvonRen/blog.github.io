@@ -1,0 +1,3 @@
+## 参考资料
+
+[AWS: 什么是 DevOps？](https://aws.amazon.com/cn/devops/what-is-devops/?trk=ps_a134p000003yHyYAAU&trkCampaign=acq_paid_search_brand&sc_channel=PS&sc_campaign=acquisition_SG&sc_publisher=Google&sc_category=mult&sc_country=SG&sc_geo=APAC&sc_outcome=acq&sc_detail=aws%20devops&sc_content=DevOps%20_e&sc_matchtype=e&sc_segment=444895799496&sc_medium=ACQ-P|PS-GO|Brand|Desktop|SU|AWS|Solution|SG|EN|Sitelink&s_kwcid=AL!4422!3!444895799496!e!!g!!aws%20devops&ef_id=Cj0KCQjw59n8BRD2ARIsAAmgPmKQ2Zwlia-oZ99AtTDWhQDafs2aJihFMder42z0rGabgblu1DGLlRMaAgZlEALw_wcB:G:s&s_kwcid=AL!4422!3!444895799496!e!!g!!aws%20devops)

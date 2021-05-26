@@ -1,4 +1,4 @@
-let sidebar = require('./directory/index')
+let sidebar = require('./directory/index');
 
 module.exports = {
   description: 'rcw',
@@ -25,7 +25,7 @@ module.exports = {
     smoothScroll: true,
 
     // Git 仓库和编辑链接
-    repo: 'https://github.com/trayvonRen/bolg.github.io/',
+    repo: 'https://github.com/trayvonRen/blog.github.io/',
     docsDir: 'docs',
     repoLabel: 'Github', // 导航栏上的文本
     editLinks: true,
@@ -33,10 +33,10 @@ module.exports = {
 
     // 顶部导航
     nav: [
-      {
-        text: 'Css',
-        link: '/css/base/how.md',
-      },
+      // {
+      //   text: 'Css',
+      //   link: '/css/base/how.md',
+      // },
       {
         text: 'Javascript',
         link: '/javascript/',
@@ -47,6 +47,10 @@ module.exports = {
         link: '/react/',
       },
       {
+        text: 'Node',
+        link: '/node/',
+      },
+      {
         text: '前端工程化',
         link: '/engineering/',
       },
@@ -54,24 +58,28 @@ module.exports = {
       //   text: '后端',
       //   link: '/operator/',
       // },
+      // {
+      //   text: '数据结构与算法',
+      //   link: '/leetcode/',
+      // },
       {
-        text: '数据结构与算法',
-        link: '/leetcode/',
+        text: '软件设计',
+        link: '/design/',
       },
       {
         text: '其他',
-        link: '/other/browser/browserframework',
+        link: '/other/',
       },
-      {
-        text: '面试题',
-        link: '/question/',
-      },
+      // {
+      //   text: '面试题',
+      //   link: '/question/',
+      // },
     ],
 
     // 侧边栏
     sidebar,
   },
-  sidebarDepth: 2, // 默认 1 提取到 h2，0 为禁用，2 为 h2，h3
+  sidebarDepth: 2,
   displayAllHeaders: false, // 默认值：false 侧边栏只会显示由当前活动页面的标题组成的链接
   activeHeaderLinks: true, // 默认值：true 滚动时通过 hash 高亮侧边栏标题
   plugins: [
@@ -85,4 +93,4 @@ module.exports = {
       },
     ],
   ],
-}
+};

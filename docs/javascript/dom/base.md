@@ -55,7 +55,7 @@ Node.childNodes 返回的 NodeList 是一个实时集合，也就是说，如果
 ParentNode.children 是一个只读属性，返回 一个 Node 的子 elements ，是一个动态更新的 HTMLCollection。
 
 ```js
-var children = node.children
+var children = node.children;
 ```
 
 ### Element.firstElementChild
@@ -63,7 +63,7 @@ var children = node.children
 ParentNode.firstElementChild 只读属性，返回对象的第一个子 元素, 如果没有子元素，则为 null。
 
 ```js
-var element = node.firstElementChild
+var element = node.firstElementChild;
 ```
 
 ### Element.lastElementChild
@@ -71,7 +71,7 @@ var element = node.firstElementChild
 只读属性 ParentNode.lastElementChild 返回对象的最后一个子元素，如果没有子元素，则返回 null。
 
 ```js
-var element = node.lastElementChild
+var element = node.lastElementChild;
 ```
 
 ### Element.nextElementSibling
@@ -79,7 +79,7 @@ var element = node.lastElementChild
 nextElementSibling 返回当前元素在其父元素的子元素节点中的后一个元素节点,如果该元素已经是最后一个元素节点,则返回 null,该属性是只读的.
 
 ```js
-var nextNode = elementNodeReference.nextElementSibling
+var nextNode = elementNodeReference.nextElementSibling;
 ```
 
 ### Element.previousElementSibling
@@ -87,5 +87,5 @@ var nextNode = elementNodeReference.nextElementSibling
 previousElementSibling 返回当前元素在其父元素的子元素节点中的前一个元素节点,如果该元素已经是第一个元素节点,则返回 null,该属性是只读的.
 
 ```js
-var prevNode = elementNodeReference.previousElementSibling
+var prevNode = elementNodeReference.previousElementSibling;
 ```

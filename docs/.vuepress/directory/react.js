@@ -1,32 +1,21 @@
 module.exports = [
   {
-    title: 'React 核心概念', // 必要的
-    path: '/react/base/', // 可选的, 应该是一个绝对路径
-    collapsable: true, // 可选的, 默认值是 true,
-    sidebarDepth: 1, // 可选的, 默认值是 1
-    children: [['/react/base/Lifecycle.md', '生命周期']],
-  },
-  {
-    title: 'Hook', // 必要的
-    path: '/react/hook/', // 可选的, 应该是一个绝对路径
-    collapsable: true, // 可选的, 默认值是 true,
-    sidebarDepth: 2, // 可选的, 默认值是 1
+    title: 'React 进阶',
+    path: '/react/improve/splitting',
+    collapsable: true,
+    sidebarDepth: 2,
     children: [
-      ['/react/hook/stateHook.md', 'useState'],
-      ['/react/hook/effectHook.md', 'useEffect'],
-      ['/react/hook/contextHook.md', 'useContext'],
-      ['/react/hook/useCallback.md', 'useCallback'],
-      ['/react/hook/useMemo.md', 'useMemo'],
-      ['/react/hook/useRef.md', 'useRef'],
-      ['/react/hook/customHook.md', '自定义 Hook'],
+      ['/react/improve/splitting.md', '代码分割'],
+      ['/react/improve/optimization.md', '性能优化：组件更新'],
     ],
   },
   {
-    title: 'React 原理解析', // 必要的
-    path: '/react/code/', // 可选的, 应该是一个绝对路径
-    collapsable: true, // 可选的, 默认值是 true,
-    sidebarDepth: 1, // 可选的, 默认值是 1
+    title: 'React 原理解析',
+    path: '/react/code/',
+    collapsable: true,
+    sidebarDepth: 1,
     children: [
+      ['/react/redux/flow.md', 'react'],
       ['/react/code/concept.md', 'React 设计理念/架构'],
       ['/react/code/fiber.md', 'React Fiber'],
       ['/react/code/update.md', 'React 状态更新'],
@@ -36,22 +25,11 @@ module.exports = [
       ['/react/code/timeslice.md', 'Scheduler —— 时间切片 Time Slicing'],
     ],
   },
-
   {
-    title: 'React 进阶',
-    path: '/react/improve/', // 可选的, 应该是一个绝对路径
-    collapsable: true, // 可选的, 默认值是 true,
-    sidebarDepth: 2, // 可选的, 默认值是 1
-    children: [
-      ['/react/improve/splitting.md', '代码分割'],
-      ['/react/improve/optimization1.md', '性能优化：组件更新'],
-    ],
-  },
-  {
-    title: 'Redux', // 必要的
-    path: '/react/redux/', // 可选的, 应该是一个绝对路径
-    collapsable: true, // 可选的, 默认值是 true,
-    sidebarDepth: 2, // 可选的, 默认值是 1
+    title: 'Redux',
+    path: '/react/redux/',
+    collapsable: true,
+    sidebarDepth: 2,
     children: [
       ['/react/redux/flow.md', '工作流程'],
       ['/react/redux/action.md', 'Action'],
@@ -64,27 +42,27 @@ module.exports = [
     ],
   },
   // {
-  //   title: 'react-router', // 必要的
-  //   path: '/react/router/', // 可选的, 应该是一个绝对路径
-  //   collapsable: true, // 可选的, 默认值是 true,
-  //   sidebarDepth: 2, // 可选的, 默认值是 1
+  //   title: 'react-router',
+  //   path: '/react/router/',
+  //   collapsable: true,
+  //   sidebarDepth: 2,
   //   children: [
   //     ['/react/router/base.md', '基础用法'],
   //     ['/react/router/components.md', '组件'],
   //   ],
   // },
   // {
-  //   title: 'react 中的 css', // 必要的
-  //   path: '/react/style/', // 可选的, 应该是一个绝对路径
-  //   collapsable: true, // 可选的, 默认值是 true,
-  //   sidebarDepth: 2, // 可选的, 默认值是 1
+  //   title: 'react 中的 css',
+  //   path: '/react/style/',
+  //   collapsable: true,
+  //   sidebarDepth: 2,
   //   children: [['/react/style/styled.md', 'styled-components']],
   // },
   // {
-  //   title: '源码解析', // 必要的
-  //   path: '/react/code/', // 可选的, 应该是一个绝对路径
-  //   collapsable: true, // 可选的, 默认值是 true,
-  //   sidebarDepth: 2, // 可选的, 默认值是 1
+  //   title: '源码解析',
+  //   path: '/react/code/',
+  //   collapsable: true,
+  //   sidebarDepth: 2,
   //   children: [['/react/code/test.md', '测试']],
   // },
-]
+];

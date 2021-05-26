@@ -4,28 +4,27 @@
 
 在你的应用中引入代码分割的最佳方式是通过动态 import() 语法。
 
-```js
-import('./math').then(math => {
-  console.log(math.add(16, 26))
-})
+```jsx
+import('./math').then((math) => {
+  console.log(math.add(16, 26));
+});
 ```
 
 ## React.lazy
 
 React.lazy 函数能让你像渲染常规组件一样处理动态引入（的组件）。
 
-```js
-import React, { Suspense } from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
-const Login = React.lazy(() => import('./container/login'))
-let L
+```jsx
+import React, { Suspense } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+const Login = React.lazy(() => import('./container/login'));
 export default function App() {
   return (
     <>
       <Router>
-        <Link to="login">login</Link>
+        <Link to='login'>login</Link>
         <Switch>
-          <Route path="/login">
+          <Route path='/login'>
             <Suspense fallback={<div>Loading...</div>}>
               <Login></Login>
             </Suspense>
@@ -33,7 +32,7 @@ export default function App() {
         </Switch>
       </Router>
     </>
-  )
+  );
 }
 ```
 
@@ -43,38 +42,38 @@ export default function App() {
 
 一个不错的选择是从路由开始。大多数网络用户习惯于页面之间能有个加载切换过程。你也可以选择重新渲染整个页面，这样您的用户就不必在渲染的同时再和页面上的其他元素进行交互。
 
-```js
-import React, { Suspense, lazy } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+```jsx
+import React, { Suspense, lazy } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-const Home = lazy(() => import('./routes/Home'))
-const About = lazy(() => import('./routes/About'))
+const Home = lazy(() => import('./routes/Home'));
+const About = lazy(() => import('./routes/About'));
 
 const App = () => (
   <Router>
     <Suspense fallback={<div>Loading...</div>}>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
+        <Route exact path='/' component={Home} />
+        <Route path='/about' component={About} />
       </Switch>
     </Suspense>
   </Router>
-)
+);
 ```
 
 ## Loadable Components
 
 React 虽然支持开箱即用 React.lazy 的，但是它有一些限制，这就是为什么 Loadable Components 存在的原因。
 
-```js
-import loadable from '@loadable/component'
-const OtherComponent = loadable(() => import('./OtherComponent'))
+```jsx
+import loadable from '@loadable/component';
+const OtherComponent = loadable(() => import('./OtherComponent'));
 function MyComponent() {
   return (
     <div>
       <OtherComponent />
     </div>
-  )
+  );
 }
 ```
 

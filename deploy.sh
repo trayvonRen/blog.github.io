@@ -5,9 +5,9 @@
 set -e
 
 # push 到 github
-git add .
-git commit -m'add note'
-git push
+# git add .
+# git commit -m'add note'
+# git push
 
 # 生成静态文件
 npm run docs:build
