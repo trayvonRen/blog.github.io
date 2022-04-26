@@ -11,11 +11,11 @@
 	"author": "Your name <'1669506811@qq.com'>",
 	"license": "ISC",
 	"devDependencies": {
-		"vuepress": "^1.8.2",
-		"vuepress-plugin-mathjax": "^1.2.8",
+		"vuepress": "1.8.2",
+		"vuepress-plugin-mathjax": "1.2.8",
 		"watchpack": "1.6.1"
 	},
 	"dependencies": {
-		"markdown-it-katex": "^2.0.3"
+		"markdown-it-katex": "2.0.3"
 	}
 }
